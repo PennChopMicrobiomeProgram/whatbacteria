@@ -1,0 +1,112 @@
+```{r message=FALSE}
+library(tidyverse)
+```
+
+## Synonyms from LPSN
+
+LPSN covers the ranks of genus and species
+
+```{r}
+lpsn_synonyms <- read_csv("lpsn_synonyms.csv", col_types = "ccc") |>
+  distinct(name, rank, correct_name)
+```
+
+```{r}
+lpsn_synonyms |>
+  count(rank)
+```
+
+Find any names that may resolve to more than one correct name.
+
+```{r}
+lpsn_synonyms |>
+  group_by(name) |>
+  filter(n() > 1)
+```
+
+Fix issues:
+
+  * Bacillus pallidus is an illegitimate name for Falsibacillus pallidus,
+    should resolve to Aeribacillus pallidus.
+
+```{r}
+lpsn_synonyms_unique <- lpsn_synonyms |>
+  filter(!(
+    (name %in% "Bacillus pallidus") &
+      (correct_name %in% "Falsibacillus pallidus")))
+```
+
+Check again.
+
+```{r}
+lpsn_synonyms_unique |>
+  group_by(name) |>
+  filter(n() > 1)
+```
+
+## Synonyms from NCBI
+
+```{r}
+ncbi_synonyms <- read_csv("ncbi_synonyms.csv", col_types = "ccc")
+```
+
+```{r}
+ncbi_synonyms |>
+  count(rank)
+```
+
+Find any names that may resolve to more than one correct name.
+
+```{r}
+ncbi_duplicate_synonyms <- ncbi_synonyms |>
+  group_by(name) |>
+  filter(n() > 1) |>
+  ungroup() |>
+  arrange(name, rank)
+ncbi_duplicate_synonyms
+```
+
+When a name could potentially resolve to more than one correct name at NCBI,
+it resolves to two taxa, one at the phylum level and one at the class level.
+Fix by always resolving to the phylum level.
+
+```{r}
+ncbi_duplicate_synonyms_fixed <- ncbi_duplicate_synonyms |>
+  filter(rank %in% "phylum")
+```
+
+```{r}
+ncbi_synonyms_unique <- ncbi_synonyms |>
+  group_by(name) |>
+  filter(n() == 1) |>
+  ungroup() |>
+  bind_rows(ncbi_duplicate_synonyms_fixed)
+```
+
+## Extra synonyms
+
+Amazingly, Firmicutes is not listed as a synonym of Bacillota at NCBI
+
+```{r}
+extra_synonyms_unique <- read_csv("extra_synonyms.csv", col_types = "ccc")
+```
+
+## Combine synonym tables and export
+
+```{r}
+taxon_synonyms <- bind_rows(
+  lpsn_synonyms_unique,
+  ncbi_synonyms_unique,
+  extra_synonyms_unique
+)
+```
+
+```{r}
+taxon_synonyms |>
+  count(rank, sort = TRUE)
+```
+
+```{r}
+usethis::use_data(taxon_synonyms, overwrite = TRUE)
+```
+
