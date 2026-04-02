@@ -200,3 +200,36 @@ test_that("first_true_index works for multiple TRUE values", {
 test_that("first_true_index returns NA if there are no TRUE values", {
   expect_equal(first_true_idx(c(FALSE, FALSE, FALSE)), NA_integer_)
 })
+
+test_that("resolve_taxa gives correct taxon name", {
+  syn <- list(
+    name = c("Bacter vulgatus", "Firmicutes"),
+    rank = c("species", "phylum"),
+    correct_name = c("P vulgatus", "Bacillo")
+  )
+  expect_equal(
+    resolve_taxa(c("Bacter vulgatus", "Firmicutes", "Staph"), synonyms = syn),
+    c("P vulgatus", "Bacillo", "Staph")
+  )
+})
+
+test_that("clean_taxa removes rank prefixes", {
+  expect_equal(clean_taxa("g__Bacteroides"), "Bacteroides")
+})
+
+test_that("clean_taxa removes square brackets", {
+  expect_equal(clean_taxa("[Ruminococcus] gnavus"), "Ruminococcus gnavus")
+})
+
+test_that("clean_taxa removes leading and trailing whitespace", {
+  expect_equal(clean_taxa(" A bc  "), "A bc")
+})
+
+test_that("split_lineage_noranks splits on semicolon", {
+  expect_equal(split_lineage_noranks("A B; C"), list(c("A B", "C")))
+  expect_equal(split_lineage_noranks("A B;C"), list(c("A B", "C")))
+})
+
+test_that("split_lineage_noranks splits on hyphen", {
+  expect_equal(split_lineage_noranks("A - B C"), list(c("A", "B C")))
+})

@@ -160,3 +160,27 @@ first_true_idx <- function (x) {
     NA_integer_
   }
 }
+
+split_lineage_noranks <- function(lineage, pattern = "(; ?)|( - )") {
+  strsplit(lineage, split = pattern, perl = TRUE)
+}
+
+clean_taxa <- function(taxa) {
+  # Remove rank prefix
+  taxa <- sub("[kpcofgsx]__", "", taxa)
+  # Remove brackets from genus names
+  taxa <- gsub("\\[(\\w+)\\]", "\\1", taxa)
+  # Remove leading and trailing whitespace
+  taxa <- trimws(taxa)
+  taxa
+}
+
+resolve_taxa <- function(name, synonyms = taxon_synonyms) {
+  synonym_idx <- match(tolower(name), tolower(synonyms$name))
+  cat(synonym_idx)
+  ifelse(
+    !is.na(synonym_idx),
+    synonyms$correct_name[synonym_idx],
+    name
+  )
+}
