@@ -31,10 +31,10 @@ To access the databases directly:
 ``` r
 head(taxon_phenotypes)
 #>            taxon   rank    aerobic_status    gram_stain                     doi
-#> 1 Actinobacteria Phylum              <NA> Gram-positive   10.1128/MMBR.00019-15
-#> 2  Bacteroidetes Phylum              <NA> Gram-negative                    <NA>
-#> 3     Firmicutes Phylum              <NA> Gram-positive 10.1099/00207713-28-1-1
-#> 4 Proteobacteria Phylum              <NA> Gram-negative                    <NA>
+#> 1 Actinomycetota Phylum              <NA> Gram-positive   10.1128/MMBR.00019-15
+#> 2   Bacteroidota Phylum              <NA> Gram-negative                    <NA>
+#> 3      Bacillota Phylum              <NA> Gram-positive 10.1099/00207713-28-1-1
+#> 4 Pseudomonadota Phylum              <NA> Gram-negative                    <NA>
 #> 5  Negativicutes  Class              <NA> Gram-negative    10.4056/sigs.2981345
 #> 6     Clostridia  Class obligate anaerobe Gram-positive                    <NA>
 head(taxon_susceptibility)
@@ -52,7 +52,7 @@ To get a particular lineage’s susceptibilities:
 ``` r
 what_antibiotic(
    c("Enterococcus faecalis", "Lactobacillus", "Lactobacillus delbrueckii"),
-   "vancomycin", synonyms = NULL)
+   "vancomycin")
 #> [1] NA            "resistant"   "susceptible"
 ```
 
@@ -61,6 +61,6 @@ To get a particular lineage’s phenotypes:
 ``` r
 what_phenotype(
    c("Bacteroidetes", "Firmicutes", "Firmicutes; Negativicutes"),
-   "gram_stain", synonyms = NULL)
+   "gram_stain")
 #> [1] "Gram-negative" "Gram-positive" "Gram-negative"
 ```

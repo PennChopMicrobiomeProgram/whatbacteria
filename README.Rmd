@@ -50,7 +50,7 @@ To get a particular lineage's susceptibilities:
 ```{r}
 what_antibiotic(
    c("Enterococcus faecalis", "Lactobacillus", "Lactobacillus delbrueckii"),
-   "vancomycin", synonyms = NULL)
+   "vancomycin")
 ```
 
 To get a particular lineage's phenotypes:
@@ -58,5 +58,5 @@ To get a particular lineage's phenotypes:
 ```{r}
 what_phenotype(
    c("Bacteroidetes", "Firmicutes", "Firmicutes; Negativicutes"),
-   "gram_stain", synonyms = NULL)
+   "gram_stain")
 ```
