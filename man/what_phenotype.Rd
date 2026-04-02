@@ -4,7 +4,12 @@
 \alias{what_phenotype}
 \title{Fetch the phenotype values for a given lineage and phenotype}
 \usage{
-what_phenotype(lineage, phenotype, db = taxon_phenotypes)
+what_phenotype(
+  lineage,
+  phenotype,
+  db = taxon_phenotypes,
+  synonyms = taxon_synonyms
+)
 }
 \arguments{
 \item{lineage}{A character vector of taxonomic assignments or lineages}

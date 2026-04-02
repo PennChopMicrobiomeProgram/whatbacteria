@@ -4,7 +4,12 @@
 \alias{what_antibiotic}
 \title{Fetch susceptibility values for a given lineage and antibiotic}
 \usage{
-what_antibiotic(lineage, antibiotic, db = taxon_susceptibility)
+what_antibiotic(
+  lineage,
+  antibiotic,
+  db = taxon_susceptibility,
+  synonyms = taxon_synonyms
+)
 }
 \arguments{
 \item{lineage}{A character vector of taxonomic assignments or lineages}

@@ -4,12 +4,14 @@
 \alias{match_annotation}
 \title{Determine the annotation values for each lineage}
 \usage{
-match_annotation(lineage, db)
+match_annotation(lineage, db, synonyms = NULL)
 }
 \arguments{
 \item{lineage}{A vector of taxonomic assignments or lineages}
 
 \item{db}{A data frame with columns named "taxon", "rank", and "value"}
+
+\item{synonyms}{A data frame of with columns "name" and "correct_name"}
 }
 \value{
 A vector of assigned values
