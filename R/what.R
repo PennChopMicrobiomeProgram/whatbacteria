@@ -176,6 +176,9 @@ clean_taxa <- function(taxa) {
 }
 
 resolve_taxa <- function(name, synonyms = taxon_synonyms) {
+  if (is.null(synonyms)) {
+    return(name)
+  }
   synonym_idx <- match(tolower(name), tolower(synonyms$name))
   ifelse(
     !is.na(synonym_idx),
@@ -223,4 +226,42 @@ warn_multimatch <- function (multimatch_lineages, multimatch_idxs, taxa) {
     collapse = "\n"
   )
   warning(message)
+}
+
+prepare_lineage <- function (x, synonyms = taxon_synonyms) {
+  x |>
+    split_lineage_noranks() |>
+    lapply(clean_taxa) |>
+    lapply(resolve_taxa, synonyms)
+}
+
+#' Determine the annotation values for each lineage
+#'
+#' @param lineage A vector of taxonomic assignments or lineages
+#' @param db A data frame with columns named "taxon", "rank", and "value"
+#' @return A vector of assigned values
+match_annotation_split <- function (lineage, db, synonyms = taxon_synonyms) {
+  lineage_vectors <- prepare_lineage(lineage, synonyms = synonyms)
+  get_rank_specific_db <- function (r) {
+    rank_is_r <- db[["rank"]] %in% r
+    db[rank_is_r, ]
+  }
+  db_ranks <- lapply(rev(taxonomic_ranks), get_rank_specific_db)
+  names(db_ranks) <- rev(taxonomic_ranks)
+
+  get_values_by_rank <- function (rank_specific_db) {
+    taxa_idx <- match_split_lineage_taxa(lineage_vectors, rank_specific_db[["taxon"]])
+    rank_specific_db[["value"]][taxa_idx]
+  }
+  values_by_rank <- vapply(
+    db_ranks,
+    get_values_by_rank,
+    rep("a", length(lineage_vectors)))
+
+  if (length(lineage_vectors) == 1) {
+    assigned_values <- first_non_na_value(values_by_rank)
+  } else {
+    assigned_values <- apply(values_by_rank, 1, first_non_na_value)
+  }
+  assigned_values
 }

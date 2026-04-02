@@ -258,3 +258,40 @@ test_that("match_split_lineage_taxa warns on multi-match", {
     "Multiple taxa"
   )
 })
+
+test_that("match_annotation_split works for normal input", {
+  # For the lineage "Firmicutes Negativicutes", the phenotype value for
+  # Negativicutes (Gram-negative) should override the value for Firmicutes
+  # (Gram-positive)
+  expect_equal(
+    match_annotation_split(
+      c("Bacteroidetes", "Firmicutes", "Firmicutes - Negativicutes"),
+      gram_stain_db, synonyms = NULL),
+    c("Gram-negative", "Gram-positive", "Gram-negative"))
+})
+
+test_that("match_annotation_split works for lineage of length 1", {
+  expect_equal(
+    match_annotation_split("Bacteroidetes", gram_stain_db, synonyms = NULL),
+    "Gram-negative")
+})
+
+test_that("match_annotation_split works for empty lineage vector", {
+  expect_equal(match_annotation_split(character(), gram_stain_db, synonyms = NULL), character())
+})
+
+test_that("match_annotation_split works for database of length 1", {
+  expect_equal(
+    match_annotation_split(
+      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
+      gram_stain_db[2,], synonyms = NULL),
+    c("Gram-negative", NA, NA))
+})
+
+test_that("match_annotation_split works for empty database", {
+  expect_equal(
+    match_annotation_split(
+      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
+      gram_stain_db[integer(),], synonyms = NULL),
+    as.character(c(NA, NA, NA)))
+})
