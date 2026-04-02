@@ -25,3 +25,13 @@
 #'   \item{doi}{DOI of the publication from which the information was obtained.}
 #' }
 "taxon_susceptibility"
+
+#' Synonyms for bacterial taxa
+#' @format A data frame with the following columns:
+#' \describe{
+#'   \item{name}{The synonym}
+#'   \item{rank}{The rank of the taxon}
+#'   \item{correct_name}{The "correct" name for the taxon, as it is used in
+#'     other package data.}
+#' }
+"taxon_synonyms"
