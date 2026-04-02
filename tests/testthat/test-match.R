@@ -31,7 +31,7 @@ test_that("what_antibiotic works for vancomycin data", {
       c("Enterococcus faecalis",
         "Lactobacillus",
         "Lactobacillus delbrueckii"),
-      "vancomycin", db = vanco_db),
+      "vancomycin", db = vanco_db, synonyms = NULL),
     c(NA, "resistant", "susceptible"))
 })
 
@@ -41,7 +41,7 @@ test_that("what_antibiotic works for tetracycline data", {
       c("Enterococcus faecalis",
         "Lactobacillus",
         "Lactobacillus delbrueckii"),
-      "tetracycline", db = tetra_db),
+      "tetracycline", db = tetra_db, synonyms = NULL),
     c("resistant", NA, NA))
 })
 
@@ -52,14 +52,14 @@ test_that("what_antibiotic works for multi-abx data", {
       c("Enterococcus faecalis",
         "Lactobacillus",
         "Lactobacillus delbrueckii"),
-      "vancomycin", db = mixed_db),
+      "vancomycin", db = mixed_db, synonyms = NULL),
     c(NA, "resistant", "susceptible"))
   expect_equal(
     what_antibiotic(
       c("Enterococcus faecalis",
         "Lactobacillus",
         "Lactobacillus delbrueckii"),
-      "tetracycline", db = mixed_db),
+      "tetracycline", db = mixed_db, synonyms = NULL),
     c("resistant", NA, NA))
 })
 
@@ -69,47 +69,10 @@ test_that("what_phenotype works for normal input", {
 
   expect_equal(
     what_phenotype(
-      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
+      c("Bacteroidetes", "Firmicutes", "Firmicutes - Negativicutes"),
       "gram_stain",
-      pheno_db),
+      db = pheno_db, synonyms = NULL),
     c("Gram-negative", "Gram-positive", "Gram-negative"))
-})
-
-test_that("match_annotation works for normal input", {
-  # For the lineage "Firmicutes Negativicutes", the phenotype value for
-  # Negativicutes (Gram-negative) should override the value for Firmicutes
-  # (Gram-positive)
-  expect_equal(
-    match_annotation(
-      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
-      gram_stain_db),
-    c("Gram-negative", "Gram-positive", "Gram-negative"))
-})
-
-test_that("match_annotation works for lineage of length 1", {
-  expect_equal(
-    match_annotation("Bacteroidetes", gram_stain_db),
-    "Gram-negative")
-})
-
-test_that("match_annotation works for empty lineage vector", {
-  expect_equal(match_annotation(character(), gram_stain_db), character())
-})
-
-test_that("match_annotation works for database of length 1", {
-  expect_equal(
-    match_annotation(
-      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
-      gram_stain_db[2,]),
-    c("Gram-negative", NA, NA))
-})
-
-test_that("match_annotation works for empty database", {
-  expect_equal(
-    match_annotation(
-      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
-      gram_stain_db[integer(),]),
-    as.character(c(NA, NA, NA)))
 })
 
 test_that("first_non_na_value works for multiple non-NA values", {
@@ -259,39 +222,39 @@ test_that("match_split_lineage_taxa warns on multi-match", {
   )
 })
 
-test_that("match_annotation_split works for normal input", {
+test_that("match_annotation works for normal input", {
   # For the lineage "Firmicutes Negativicutes", the phenotype value for
   # Negativicutes (Gram-negative) should override the value for Firmicutes
   # (Gram-positive)
   expect_equal(
-    match_annotation_split(
+    match_annotation(
       c("Bacteroidetes", "Firmicutes", "Firmicutes - Negativicutes"),
       gram_stain_db, synonyms = NULL),
     c("Gram-negative", "Gram-positive", "Gram-negative"))
 })
 
-test_that("match_annotation_split works for lineage of length 1", {
+test_that("match_annotation works for lineage of length 1", {
   expect_equal(
-    match_annotation_split("Bacteroidetes", gram_stain_db, synonyms = NULL),
+    match_annotation("Bacteroidetes", gram_stain_db, synonyms = NULL),
     "Gram-negative")
 })
 
-test_that("match_annotation_split works for empty lineage vector", {
-  expect_equal(match_annotation_split(character(), gram_stain_db, synonyms = NULL), character())
+test_that("match_annotation works for empty lineage vector", {
+  expect_equal(match_annotation(character(), gram_stain_db, synonyms = NULL), character())
 })
 
-test_that("match_annotation_split works for database of length 1", {
+test_that("match_annotation works for database of length 1", {
   expect_equal(
-    match_annotation_split(
-      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
+    match_annotation(
+      c("Bacteroidetes", "Firmicutes", "Firmicutes - Negativicutes"),
       gram_stain_db[2,], synonyms = NULL),
     c("Gram-negative", NA, NA))
 })
 
-test_that("match_annotation_split works for empty database", {
+test_that("match_annotation works for empty database", {
   expect_equal(
-    match_annotation_split(
-      c("Bacteroidetes", "Firmicutes", "Firmicutes Negativicutes"),
+    match_annotation(
+      c("Bacteroidetes", "Firmicutes", "Firmicutes - Negativicutes"),
       gram_stain_db[integer(),], synonyms = NULL),
     as.character(c(NA, NA, NA)))
 })
