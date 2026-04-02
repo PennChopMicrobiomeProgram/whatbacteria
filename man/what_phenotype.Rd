@@ -4,7 +4,12 @@
 \alias{what_phenotype}
 \title{Fetch the phenotype values for a given lineage and phenotype}
 \usage{
-what_phenotype(lineage, phenotype, db = taxon_phenotypes)
+what_phenotype(
+  lineage,
+  phenotype,
+  db = whatbacteria::taxon_phenotypes,
+  synonyms = whatbacteria::taxon_synonyms
+)
 }
 \arguments{
 \item{lineage}{A character vector of taxonomic assignments or lineages}
@@ -14,6 +19,9 @@ phenotype of interest}
 
 \item{db}{A data frame with columns named "taxon", "rank", and the column
 name specified in \code{phenotype}}
+
+\item{synonyms}{A data frame of taxonomic synonyms with columns "name" and
+"correct_name"}
 }
 \value{
 A vector of assigned phenotype values

@@ -4,6 +4,8 @@
 #' @param antibiotic The name of the antibiotic or antibiotic class in \code{db}
 #' @param db A data frame with columns named "taxon", "rank", "antibiotic",
 #'   and "value"
+#' @param synonyms A data frame of taxonomic synonyms with columns "name" and
+#'   "correct_name"
 #' @return A vector of assigned susceptibility values, which should be either
 #'   "susceptible", "resistant", or \code{NA}
 #' @details
@@ -24,11 +26,12 @@
 #' @export
 what_antibiotic <- function (lineage,
                              antibiotic,
-                             db = taxon_susceptibility) {
+                             db = whatbacteria::taxon_susceptibility,
+                             synonyms = whatbacteria::taxon_synonyms) {
   is_relevant <- db$antibiotic %in% antibiotic
   db <- db[is_relevant, c("taxon", "rank", "value")]
-  
-  susceptibility_values <- match_annotation(lineage, db)
+
+  susceptibility_values <- match_annotation(lineage, db, synonyms)
   susceptibility_values
 }
 
@@ -39,6 +42,8 @@ what_antibiotic <- function (lineage,
 #'   phenotype of interest
 #' @param db A data frame with columns named "taxon", "rank", and the column
 #'   name specified in \code{phenotype}
+#' @param synonyms A data frame of taxonomic synonyms with columns "name" and
+#'   "correct_name"
 #' @return A vector of assigned phenotype values
 #' @details
 #' This function operates much like \code{antibiotic_susceptibility}, except
@@ -57,38 +62,41 @@ what_antibiotic <- function (lineage,
 #' @export
 what_phenotype <- function (lineage,
                             phenotype,
-                            db = taxon_phenotypes) {
+                            db = whatbacteria::taxon_phenotypes,
+                            synonyms = whatbacteria::taxon_synonyms) {
   db <- db[, c("taxon", "rank", phenotype)]
   # match_annotation() requires a column named "value"
   colnames(db)[3] <- "value"
-  match_annotation(lineage, db)
+  match_annotation(lineage, db, synonyms)
 }
 
 #' Determine the annotation values for each lineage
 #'
 #' @param lineage A vector of taxonomic assignments or lineages
 #' @param db A data frame with columns named "taxon", "rank", and "value"
+#' @param synonyms A data frame of with columns "name" and "correct_name"
 #' @return A vector of assigned values
-#' 
+#'
 #' @export
-match_annotation <- function (lineage, db) {
+match_annotation <- function (lineage, db, synonyms = NULL) {
+  lineage_vectors <- prepare_lineage(lineage, synonyms = synonyms)
   get_rank_specific_db <- function (r) {
     rank_is_r <- db[["rank"]] %in% r
-    db[rank_is_r,]
+    db[rank_is_r, ]
   }
   db_ranks <- lapply(rev(taxonomic_ranks), get_rank_specific_db)
   names(db_ranks) <- rev(taxonomic_ranks)
-  
+
   get_values_by_rank <- function (rank_specific_db) {
-    taxa_idx <- match_taxa(lineage, rank_specific_db[["taxon"]])
+    taxa_idx <- match_split_lineage_taxa(lineage_vectors, rank_specific_db[["taxon"]])
     rank_specific_db[["value"]][taxa_idx]
   }
   values_by_rank <- vapply(
     db_ranks,
     get_values_by_rank,
-    rep("a", length(lineage)))
-  
-  if (length(lineage) == 1) {
+    rep("a", length(lineage_vectors)))
+
+  if (length(lineage_vectors) == 1) {
     assigned_values <- first_non_na_value(values_by_rank)
   } else {
     assigned_values <- apply(values_by_rank, 1, first_non_na_value)
@@ -115,7 +123,7 @@ match_taxa <- function (lineages, taxa) {
   if (length(taxa) == 0) {
     return(rep_len(NA_character_, length(lineages)))
   }
-  
+
   taxa_patterns <- paste0("(?<=__|\\b)(?:", taxa, ")\\b")
   lineage_matches <- vapply(
     X = taxa_patterns,
@@ -124,7 +132,7 @@ match_taxa <- function (lineages, taxa) {
     x = lineages,
     perl = TRUE,
     USE.NAMES = TRUE)
-  
+
   # If the user passes only one lineage, lineage_matches will be a vector
   # rather than an array. After some trial and error, I found that it's better
   # to deal with this at each stage of the computation, rather than trying to
@@ -139,7 +147,7 @@ match_taxa <- function (lineages, taxa) {
       "The following lineages match more than one taxon:\n",
       paste(lineages[multi_matches], collapse = "\n"), "\n")
   }
-  
+
   if (n_lineages == 1) {
     taxon_idx <- first_true_idx(lineage_matches)
   } else {
@@ -150,7 +158,7 @@ match_taxa <- function (lineages, taxa) {
 
 #' Return the first index of a boolean vector that is TRUE. If all elements of
 #' the vector are FALSE, return NA. Tempted to call this function minwhich.
-#' 
+#'
 #' @param x A logical vector
 #' @return index of first true in vector or NA
 first_true_idx <- function (x) {
@@ -159,4 +167,78 @@ first_true_idx <- function (x) {
   } else {
     NA_integer_
   }
+}
+
+split_lineage_noranks <- function(lineage, pattern = "(; ?)|( - )") {
+  strsplit(lineage, split = pattern, perl = TRUE)
+}
+
+clean_taxa <- function(taxa) {
+  # Remove rank prefix
+  taxa <- sub("[kpcofgsx]__", "", taxa)
+  # Remove brackets from genus names
+  taxa <- gsub("\\[(\\w+)\\]", "\\1", taxa)
+  # Remove leading and trailing whitespace
+  taxa <- trimws(taxa)
+  taxa
+}
+
+resolve_taxa <- function(name, synonyms = whatbacteria::taxon_synonyms) {
+  if (is.null(synonyms)) {
+    return(name)
+  }
+  synonym_idx <- match(tolower(name), tolower(synonyms$name))
+  ifelse(
+    !is.na(synonym_idx),
+    synonyms$correct_name[synonym_idx],
+    name
+  )
+}
+
+match_split_lineage_taxa <- function(lineage_vectors, taxa) {
+  # Convert to lowercase for case-insensitive matching
+  lineage_vectors_lc <- lapply(lineage_vectors, tolower)
+  taxa_lc <- tolower(taxa)
+  taxa_match_idxs <- lapply(lineage_vectors_lc, match, table = taxa_lc)
+  # If multiple elements in the lineage match to a taxon, we issue a warning.
+  is_multimatch <- vapply(taxa_match_idxs, function(x) sum(!is.na(x)) > 1, FUN.VALUE = TRUE)
+  if (any(is_multimatch)) {
+    warn_multimatch(
+      lineage_vectors[is_multimatch],
+      taxa_match_idxs[is_multimatch],
+      taxa
+    )
+  }
+  # If multiple taxa are matched for a single lineage, we take the first
+  # (highest-ranking) taxon match
+  first_taxa_matches <- vapply(taxa_match_idxs, first_non_na_value, FUN.VALUE = 1)
+  first_taxa_matches
+}
+
+warn_multimatch <- function (multimatch_lineages, multimatch_idxs, taxa) {
+  lineage_toprint <- lapply(multimatch_lineages, paste, collapse = "; ")
+
+  multimatch_idxs <- lapply(multimatch_idxs, function (x) x[!is.na(x)])
+  multimatch_taxa_names <- lapply(multimatch_idxs, function (x) taxa[x])
+  taxa_toprint <- lapply(multimatch_taxa_names, paste, collapse = ", ")
+
+  message_details <- paste(
+    "Lineage",
+    lineage_toprint,
+    "matches multiple taxa of the same rank:",
+    taxa_toprint,
+    collapse = "\n")
+  message <- paste(
+    "Multiple taxa matched for one or more lineages:",
+    message_details,
+    collapse = "\n"
+  )
+  warning(message)
+}
+
+prepare_lineage <- function (x, synonyms = whatbacteria::taxon_synonyms) {
+  x |>
+    split_lineage_noranks() |>
+    lapply(clean_taxa) |>
+    lapply(resolve_taxa, synonyms)
 }

@@ -1,0 +1,827 @@
+name,rank,correct_name
+Myxobacteria,order,Myxococcales
+The Myxobacteria,order,Myxococcales
+Cystobacteraceae,family,Archangiaceae
+rhizobacteria,order,Hyphomicrobiales
+Rhizobiales,order,Hyphomicrobiales
+Methylomonadaceae Leadbetter 1974,family,Methylococcaceae
+type I methanotrophs,family,Methylococcaceae
+Acetobacteraceae (ex Henrici 1939) Gillis and De Ley 1980,family,Acetobacteraceae
+Acinetobacteraceae,family,Moraxellaceae
+Branhamaceae,family,Moraxellaceae
+Simonsiellaceae,family,Neisseriaceae
+Enterobacteraceae,family,Enterobacteriaceae
+Bartonella group,family,Bartonellaceae
+Dichelobacter group,family,Cardiobacteriaceae
+Haloanaerobiaceae,family,Halanaerobiaceae
+Bacteroidetes,phylum,Bacteroidota
+Bacteroidota Whitman et al. 2018,phylum,Bacteroidota
+Sphingobacteria,phylum,Bacteroidota
+Chlorobaeota,phylum,Chlorobiota
+Chlorobiota corrig. Iino et al. 2021,phylum,Chlorobiota
+Chlorobi,phylum,Chlorobiota
+Cyanobacteria,phylum,Cyanobacteriota
+Cyanophycota,phylum,Cyanobacteriota
+Cyanophyta,phylum,Cyanobacteriota
+Oxygenic photosynthetic bacteria,phylum,Cyanobacteriota
+Oxyphotobacteria,phylum,Cyanobacteriota
+"Chroococcales corrig. Ardissone, 1886",order,Chroococcales
+Chroococcoideae,order,Chroococcales
+Prochlorales,family,Prochloraceae
+Alphaproteobacteriota,phylum,Pseudomonadota
+Alphaproteobacteriota Whitman et al. 2018,phylum,Pseudomonadota
+Proteobacteria,phylum,Pseudomonadota
+Proteobacteriota,phylum,Pseudomonadota
+gamma proteobacteria,class,Gammaproteobacteria
+gamma subdivision,class,Gammaproteobacteria
+gamma subgroup,class,Gammaproteobacteria
+Proteobacteria gamma subdivision,class,Gammaproteobacteria
+Pseudomonadia,class,Gammaproteobacteria
+"Purple bacteria, gamma subdivision",class,Gammaproteobacteria
+Bacillaeota,phylum,Bacillota
+Bacillota corrig. Gibbons and Murray 2021,phylum,Bacillota
+Bacillus/Clostridium group,phylum,Bacillota
+clostridial firmicutes,phylum,Bacillota
+Clostridium group firmicutes,phylum,Bacillota
+Low G+C firmicutes,phylum,Bacillota
+Yaniaceae,family,Micrococcaceae
+Yaniellaceae,family,Micrococcaceae
+Deinococcaeota,phylum,Deinococcota
+Deinococcus-Thermus,phylum,Deinococcota
+Bacillus/Staphylococcus group,order,Bacillales
+Caryophanales,order,Bacillales
+Actinobacteria Stackebrandt et al. 1997,class,Actinomycetes
+Actinomycetia,class,Actinomycetes
+Thermomonospora group,family,Thermomonosporaceae
+Actinosynnemataceae,family,Pseudonocardiaceae
+Borrelomycetales,order,Mycoplasmatales
+Mollicutales,order,Mycoplasmatales
+Mycoplasmas,order,Mycoplasmatales
+Paramycetales,order,Mycoplasmatales
+Pleuropneumoniales,order,Mycoplasmatales
+Borrelomycetaceae,family,Mycoplasmataceae
+Parasitaceae,family,Mycoplasmataceae
+Pleuropneumoniaceae,family,Mycoplasmataceae
+Sapromycetaceae,family,Acholeplasmataceae
+Saprophytaceae,family,Acholeplasmataceae
+Haloarchaeales,order,Halobacteriales
+Haloferacales,order,Halobacteriales
+Natrialbales,order,Halobacteriales
+Haloarchaeaceae,family,Halobacteriaceae
+Pyrodictiales,family,Pyrodictiaceae
+Actinocatenisporaceae Salam et al. 2020,family,Micromonosporaceae
+Alphabacteria,class,Alphaproteobacteria
+alpha proteobacteria,class,Alphaproteobacteria
+alpha subdivision,class,Alphaproteobacteria
+alpha subgroup,class,Alphaproteobacteria
+Proteobacteria alpha subdivision,class,Alphaproteobacteria
+"Purple bacteria, alpha subdivision",class,Alphaproteobacteria
+beta proteobacteria,class,Betaproteobacteria
+beta subdivision,class,Betaproteobacteria
+beta subgroup,class,Betaproteobacteria
+Proteobacteria beta subdivision,class,Betaproteobacteria
+"Purple bacteria, beta subdivision",class,Betaproteobacteria
+Deltabacteria Cavalier-Smith 1992,class,Deltaproteobacteria
+Deltabacteria Cavalier-Smith 2002,class,Deltaproteobacteria
+delta proteobacteria,class,Deltaproteobacteria
+delta subdivision,class,Deltaproteobacteria
+delta subgroup,class,Deltaproteobacteria
+Proteobacteria delta subdivision,class,Deltaproteobacteria
+"Purple bacteria, delta subdivision",class,Deltaproteobacteria
+Candidatus Korarchaeota,phylum,Thermoproteota
+Candidatus Methanomethylicota,phylum,Thermoproteota
+Candidatus Verstraetearchaeota Vanwonterghem et al. 2016,phylum,Thermoproteota
+Crenarchaeota,phylum,Thermoproteota
+Eocyta,phylum,Thermoproteota
+Thermoproteaeota,phylum,Thermoproteota
+Thermoproteota corrig. Garrity and Holt 2021,phylum,Thermoproteota
+Xenarchaea,phylum,Thermoproteota
+Xenarchaeota,phylum,Thermoproteota
+Euryarchaeota,phylum,Methanobacteriota
+Methanobacteraeota,phylum,Methanobacteriota
+Epsilonbacteraeota,phylum,Campylobacterota
+epsilon proteobacteria,phylum,Campylobacterota
+epsilon subdivision,phylum,Campylobacterota
+epsilon subgroup,phylum,Campylobacterota
+Proteobacteria epsilon subdivision,phylum,Campylobacterota
+"Purple bacteria, epsilon subdivision",phylum,Campylobacterota
+archaeal group 1,order,Nitrosopumilales
+Archaeobacterium group 1,order,Nitrosopumilales
+marine archaeal group 1,order,Nitrosopumilales
+marine group1 Crenarchaeota,order,Nitrosopumilales
+marine group1 Thaumarchaeota,order,Nitrosopumilales
+Propionibacterium group,family,Propionibacteriaceae
+Mollicutes Edward and Freundt 1967 (Approved Lists 1980),class,Mollicutes
+Mycoplasmas and walled relatives,class,Mollicutes
+Paramycetes,class,Mollicutes
+cluster IX,family,Veillonellaceae
+Megasphaera group,family,Veillonellaceae
+Heliobacterium group,family,Heliobacteriaceae
+photosynthesizing firmicutes,family,Heliobacteriaceae
+Photosynthesizing gram-positive bacteria,family,Heliobacteriaceae
+alpha-3 proteobacteria,family,Paracoccaceae
+Rhodobacteraceae Garrity et al. 2006,family,Paracoccaceae
+Rhodobacteraceae,family,Paracoccaceae
+Rhodobacter clade,family,Paracoccaceae
+alpha methylotroph group 1,family,Methylocystaceae
+alpha subdivision methylotroph group 1,family,Methylocystaceae
+alpha subdivision methylotrophs,family,Methylocystaceae
+type II methanotrophs,family,Methylocystaceae
+Ammonia oxidizing bacteria,order,Nitrosomonadales
+Ammonia-oxidizing bacteria,order,Nitrosomonadales
+beta subdivision methylotrophs,family,Methylophilaceae
+beta-subdivision methylotrophs,family,Methylophilaceae
+Methylophilus group,family,Methylophilaceae
+Myxococcia Cavalier-Smith 2020,class,Myxococcia
+Xanthomonadaceae Saddler and Bradbury 2005,family,Lysobacteraceae
+Xanthomonadaceae,family,Lysobacteraceae
+Chloroflexi,class,Chloroflexia
+Chloroflexaceae group,order,Chloroflexales
+Chloroflexus group,order,Chloroflexales
+Fusobacteraeota,phylum,Fusobacteriota
+Fusobacteria,phylum,Fusobacteriota
+Fusobacteriota corrig. Garrity and Holt 2021,phylum,Fusobacteriota
+Hydrogenic oxygen reducing bacteria,order,Aquificales
+Obligately chemolithotrophic hydrogen bacteria,order,Aquificales
+Oxygen reducing bacteria,order,Aquificales
+Oxygen-reducing bacteria,order,Aquificales
+Entomoplasma group,family,Entomoplasmataceae
+Leuconostocaceae,family,Lactobacillaceae
+Francisella group,family,Francisellaceae
+Blattabacterium and related endosymbionts,family,Blattabacteriaceae
+Blattabacterium group,family,Blattabacteriaceae
+Nitrospiraeota,phylum,Nitrospirota
+Nitrospirae,phylum,Nitrospirota
+Nitrospira group,phylum,Nitrospirota
+Nitrospirota corrig. Garrity and Holt 2021,phylum,Nitrospirota
+Thermodesulfovibrio group,phylum,Nitrospirota
+BANA domain,family,Nitrobacteraceae
+Bradyrhizobiaceae Garrity et al. 2006,family,Nitrobacteraceae
+Bradyrhizobiaceae,family,Nitrobacteraceae
+Bradyrhizobium group,family,Nitrobacteraceae
+Candidatus Hepatobacteraceae,family,Holosporaceae
+Holosporaceae Gortz and Schmidt 2006,family,Holosporaceae
+Ancylobacter group,family,Hyphomicrobiaceae
+Hyphomicrobium group,family,Hyphomicrobiaceae
+Beijerinckia group,family,Beijerinckiaceae
+Verrucosimicrobiales,order,Verrucomicrobiales
+Cyanobacteria Subsection II,order,Pleurocapsales
+Haloanaerobiales,order,Halanaerobiales
+Acidobacteria,phylum,Acidobacteriota
+Acidobacteriota corrig. Thrash and Coates 2021,phylum,Acidobacteriota
+Acidobacterium group,phylum,Acidobacteriota
+Candidatus Marinimicrobia Rinke et al. 2013,phylum,Fidelibacterota
+Candidatus Marinisomatota Royalty and Steen 2019,phylum,Fidelibacterota
+Candidatus Neomarinimicrobiota,phylum,Fidelibacterota
+Fibrobacteraeota,phylum,Fibrobacterota
+Fibrobacteres,phylum,Fibrobacterota
+Fibrobacteres Garrity and Holt 2012,phylum,Fibrobacterota
+Fibrobacter group,phylum,Fibrobacterota
+Fibrobacterota corrig. Garrity and Holt 2021,phylum,Fibrobacterota
+Candidatus Acetithermota corrig. Rinke et al. 2013,phylum,Candidatus Bipolaricaulota
+Candidatus Acetithermota,phylum,Candidatus Bipolaricaulota
+Candidatus Acetothermia,phylum,Candidatus Bipolaricaulota
+candidate division Obsidian Pool 3,phylum,Candidatus Omnitrophota
+candidate division OP3,phylum,Candidatus Omnitrophota
+Candidatus Omnitrophicaeota,phylum,Candidatus Omnitrophota
+Candidatus Omnitrophica Rinke et al. 2013,phylum,Candidatus Omnitrophota
+Caldisericaeota,phylum,Caldisericota
+Caldisericota corrig. Mori et al. 2021,phylum,Caldisericota
+candidate division OP8,phylum,Candidatus Aminicenantota
+Candidatus Aminicenantes Rinke et al. 2013,phylum,Candidatus Aminicenantota
+Candidatus Atribacteria Dodsworth et al. 2013,phylum,Atribacterota
+Armatimonadaeota,phylum,Armatimonadota
+Armatimonadota corrig. Tamaki et al. 2021,phylum,Armatimonadota
+candidate division Obsidian Pool 10,phylum,Armatimonadota
+candidate division OP10,phylum,Armatimonadota
+candidate phylum OP10,phylum,Armatimonadota
+domain cluster OP10,phylum,Armatimonadota
+Candidatus Microgenomates Rinke et al. 2013,phylum,Candidatus Microgenomatota
+Candidatus Microgenomatota corrig. Rinke et al. 2013,phylum,Candidatus Microgenomatota
+cluster V,order,Thermoanaerobacterales
+Thermoanaerobacter group,order,Thermoanaerobacterales
+Dictyoglomaeota,phylum,Dictyoglomota
+Dictyoglomi,phylum,Dictyoglomota
+Dictyoglomota corrig. Patel 2021,phylum,Dictyoglomota
+cluster VIII,family,Syntrophomonadaceae
+Syntrophomonadaceae Zhao et al. 1993,family,Syntrophomonadaceae
+Syntrophomonas group,family,Syntrophomonadaceae
+Flexistipes group,class,Deferribacteres
+Mesorhizobium/Phyllobacterium group,family,Phyllobacteriaceae
+Phyllobacteriaceae Mergaert and Swings 2006,family,Phyllobacteriaceae
+Desulfuromonales,order,Desulfuromonadales
+Desulfuromonas group,order,Desulfuromonadales
+Thiomicrospira group,order,Thiotrichales
+Thiothrix/Francisella group,order,Thiotrichales
+Pseudomonaceae/Moraxellaceae group,order,Pseudomonadales
+Alteromonas group,family,Alteromonadaceae
+Colwellia group,family,Alteromonadaceae
+Ectothiorhodospira group,family,Ectothiorhodospiraceae
+Campylobacter group,family,Campylobacteraceae
+candidate division WS3,phylum,Candidatus Latescibacterota
+candidate division Wurtsmith 3,phylum,Candidatus Latescibacterota
+Candidatus Latescibacteria Rinke et al. 2013,phylum,Candidatus Latescibacterota
+Elusimicrobaeota,phylum,Elusimicrobiota
+Elusimicrobiota corrig. Geissinger et al. 2021,phylum,Elusimicrobiota
+Verrucomicrobaeota,phylum,Verrucomicrobiota
+Verrucomicrobia,phylum,Verrucomicrobiota
+Verrucomicrobiota corrig. Hedlund 2021,phylum,Verrucomicrobiota
+Oxalobacter group,family,Oxalobacteraceae
+beta-2 subgroup,family,Rhodocyclaceae
+Rhodocyclus group,family,Rhodocyclaceae
+Burkholderia/Oxalobacter/Ralstonia group,order,Burkholderiales
+beta-1 subgroup,family,Comamonadaceae
+Nocardiopsaceae,family,Nocardiopsidaceae
+Nocardiopsidaceae corrig.,family,Nocardiopsidaceae
+Kineococcus group,family,Kineosporiaceae
+Kinerosporia group,family,Kineosporiaceae
+Aeromonas group,family,Aeromonadaceae
+Coriobacteridae,class,Coriobacteriia
+Sphaerobacteridae,order,Sphaerobacterales
+Micrococcineae,order,Micrococcales
+Corynebacteriales Goodfellow and Jones 2015,order,Mycobacteriales
+Corynebacteriales,order,Mycobacteriales
+Corynebacteriineae corrig. Stackebrandt et al. 1997,order,Mycobacteriales
+Corynebacteriineae,order,Mycobacteriales
+Corynebacterineae,order,Mycobacteriales
+Mycobacteriales Janke 1924 (Approved Lists 1980),order,Mycobacteriales
+Mycobacteriineae,order,Mycobacteriales
+Micromonosporineae,order,Micromonosporales
+Propionibacterineae,order,Propionibacteriales
+Pseudonocardineae,order,Pseudonocardiales
+Streptomycetales,order,Kitasatosporales
+Streptomycetes,order,Kitasatosporales
+Streptomycineae Rainey et al. 1997,order,Kitasatosporales
+Streptomycineae,order,Kitasatosporales
+Streptosporangineae,order,Streptosporangiales
+Frankineae,order,Frankiales
+Glycomycineae,order,Glycomycetales
+Nocardioides group,family,Nocardioidaceae
+Williamsiaceae,family,Nocardiaceae
+Microsphaeraceae,family,Nakamurellaceae
+Cytophaga-Flexibacter group,family,Cytophagaceae
+Saprospira group,family,Saprospiraceae
+Rhodothermus group,family,Crenotrichaceae
+Ferroplasma group,family,Ferroplasmaceae
+Gallionella group,family,Gallionellaceae
+Staphylococcaceae Schleifer and Bell 2010,family,Staphylococcaceae
+Bacillus/Lactobacillus/Streptococcus group,class,Bacilli
+Firmibacteria,class,Bacilli
+Enterobacteriaceae and related endosymbionts,order,Enterobacterales
+Enterobacteriaceae group,order,Enterobacterales
+Enterobacteriales,order,Enterobacterales
+Candidatus Saccharibacteria Albertsen et al. 2013,phylum,Candidatus Saccharimonadota
+Igneococcales,order,Desulfurococcales
+Desulfurella group,family,Desulfurellaceae
+Chrysiogenes group,class,Chrysiogenia
+Chrysiogenetes Garrity and Holt 2002,class,Chrysiogenia
+Chrysiogenia corrig.,class,Chrysiogenia
+Coxiella group,family,Coxiellaceae
+Legionellaceae group,order,Legionellales
+Rhodobium group,family,Rhodobiaceae
+Methylobacteriaceae Garrity et al. 2006,family,Methylobacteriaceae
+Methylobacterium group,family,Methylobacteriaceae
+Burkholderia group,family,Burkholderiaceae
+Spirillum group,family,Spirillaceae
+Hydrogenophilus group,order,Hydrogenophilales
+Microchaetaceae,family,Tolypothrichaceae
+Beutenbergia group,family,Beutenbergiaceae
+Verrucomicrobia subdivision 2,class,Spartobacteria
+Xiphinematobacteriaceae,class,Spartobacteria
+Verrucomicrobia subdivision 3,order,Limisphaerales
+Kiritimatiellota corrig. Spring et al. 2021,phylum,Kiritimatiellota
+subdivision 6,family,Verrucomicrobia subdivision 6
+Chromatiaceae/Ectothiorhodospiraceae group,order,Chromatiales
+Xanthomonadales Saddler and Bradbury 2005,order,Lysobacterales
+Xanthomonadales,order,Lysobacterales
+Cardiobacteriaceae group,order,Cardiobacteriales
+Piscirickettsia group,family,Piscirickettsiaceae
+Thiothrix group,family,Thiotrichaceae
+Methylococcaceae group,order,Methylococcales
+Oceanospirillum/Halomonas group,order,Oceanospirillales
+Alteromonadaceae group,order,Alteromonadales
+Vibrionaceae group,order,Vibrionales
+'Vibrionales',order,Vibrionales
+Aeromonadaceae/Succinivibrionaceae group,order,Aeromonadales
+Pasteruellaceae group,order,Pasteurellales
+candidate division BD,phylum,Gemmatimonadota
+Gemmatimonadaeota,phylum,Gemmatimonadota
+Gemmatimonadetes,phylum,Gemmatimonadota
+Gemmatimonadota corrig. Zhang et al. 2021,phylum,Gemmatimonadota
+Candidatus Hydrogenedentes Rinke et al. 2013,phylum,Candidatus Hydrogenedentota
+Methanosaetaceae,family,Methanotrichaceae
+SA1 group,class,Methanonatronarchaeia
+Porphyromonadaceae Krieg 2012,family,Porphyromonadaceae
+Crenarchaeota,class,Thermoprotei
+Thermoprotea,class,Thermoprotei
+Archaeobacteria,class,Methanobacteria
+Methanothermea,class,Methanococci
+Halobacteria Grant et al. 2002,class,Halobacteria
+Protoarchaea,class,Thermococci
+Archaeoglobea,class,Archaeoglobi
+Clostridiales,order,Eubacteriales
+Clostridium cluster XI,family,Peptostreptococcaceae
+Planococcaceae,family,Caryophanaceae
+Listeriaceae Ludwig et al. 2010,family,Listeriaceae
+Alicyclobacillus group,family,Alicyclobacillaceae
+Low G+C gram-positive sulfur-oxidizing group,family,Alicyclobacillaceae
+Aquificae,class,Aquificia
+Aquificae Reysenbach 2002,class,Aquificia
+Aquificia corrig.,class,Aquificia
+Thermotogae Reysenbach 2002,class,Thermotogae
+Thermotogia,class,Thermotogae
+"Togobacteria Cavalier-Smith, 2002",class,Thermotogae
+Hadobacteria,class,Deinococci
+Thermomicrobia Garrity and Holt 2002,class,Thermomicrobia
+Chlorobea,class,Chlorobiia
+Chlorobia (ex Garrity and Holt 2001) Bello et al. 2022,class,Chlorobiia
+Chlorobiaceae Copeland 1956,family,Chlorobiaceae
+Nanoarchaeota,phylum,Nanobdellota
+Bacteroidetes,class,Bacteroidia
+Aquificae,phylum,Aquificota
+Aquificaeota,phylum,Aquificota
+Aquificota corrig. Reysenbach 2021,phylum,Aquificota
+Chloroflexaeota,phylum,Chloroflexota
+Chloroflexi Garrity and Holt 2001,phylum,Chloroflexota
+Chloroflexota corrig. Garrity and Holt 2021,phylum,Chloroflexota
+Thermotogaeota,phylum,Thermotogota
+Thermotogota corrig. Reysenbach 2021,phylum,Thermotogota
+Deferribacteraeota,phylum,Deferribacterota
+Deferribacterota corrig. Garrity and Holt 2021,phylum,Deferribacterota
+Chrysiogenaeota,phylum,Chrysiogenota
+Chrysiogenetota,phylum,Chrysiogenota
+Chrysiogenota corrig. Garrity and Holt 2021,phylum,Chrysiogenota
+Desulfobacterota,phylum,Thermodesulfobacteriota
+Thermodesulfobacteraeota,phylum,Thermodesulfobacteriota
+Thermodesulfobacteriota corrig. Garrity and Holt 2021,phylum,Thermodesulfobacteriota
+Actinobacteraeota,phylum,Actinomycetota
+Actinobacteria,phylum,Actinomycetota
+Actinobacteriota,phylum,Actinomycetota
+Fusobacteria,class,Fusobacteriia
+Verrucomicrobiae Hedlund et al. 1998,class,Verrucomicrobiia
+Verrucomicrobiae,class,Verrucomicrobiia
+Verrucomicrobiia corrig.,class,Verrucomicrobiia
+Verrucomicrobia subdivision 1,family,Verrucomicrobiaceae
+Verrucosimicrobiaceae,family,Verrucomicrobiaceae
+Planctobacteria (Cavalier-Smith 1987) Cavalier-Smith 2002,phylum,Planctomycetota
+Planctobacteria,phylum,Planctomycetota
+Planctomycetes Garrity and Holt 2001,phylum,Planctomycetota
+Planctomycetota Whitman et al. 2018,phylum,Planctomycetota
+Planctomycea,class,Planctomycetia
+Planctomycetacia,class,Planctomycetia
+Planctomycetes,class,Planctomycetia
+Planctomycetia Ward 2020,class,Planctomycetia
+Spirochaetaeota,phylum,Spirochaetota
+Spirochaetae,phylum,Spirochaetota
+Spirochaetes,phylum,Spirochaetota
+Spirochaetes,class,Spirochaetia
+Nitrospira,class,Nitrospiria
+Chlamydaeota,phylum,Chlamydiota
+Chlamydiae,phylum,Chlamydiota
+Chlamydiota corrig. Garrity and Holt 2021,phylum,Chlamydiota
+Chlamydiia (Horn 2011) emend. Gupta et al. 2016,class,Chlamydiia
+Chlamydiia Horn 2016,class,Chlamydiia
+Fibrobacteres,class,Fibrobacteria
+Acidobacteriae,class,Terriglobia
+Acidobacteriia corrig. (Cavalier-Smith 2002) Thrash and Coates 2011,class,Terriglobia
+Acidobacteriia,class,Terriglobia
+Solibacteres,class,Terriglobia
+Acidobacteriales,order,Terriglobales
+Kiloniellales,order,Rhodospirillales
+Caulobacter group,order,Caulobacterales
+'Desulfoarculaceae',family,Desulfoarculaceae
+Desulfuromonaceae,family,Desulfuromonadaceae
+Desulfuromonadaceae corrig. Kuever et al. 2006,family,Desulfuromonadaceae
+Pseudopelobacteraceae,family,Desulfuromonadaceae
+Bdellovibrionales Garrity et al. 2006,order,Bdellovibrionales
+Bdellovibrionaceae Garrity et al. 2006,family,Pseudobdellovibrionaceae
+Bdellovibrionaceae,family,Pseudobdellovibrionaceae
+Hungateiclostridiaceae,family,Oscillospiraceae
+Ruminococcaceae,family,Oscillospiraceae
+Gemmatimonadetes,class,Gemmatimonadia
+Gemmatimonadia corrig.,class,Gemmatimonadia
+Candidatus Absconditabacteria Hug et al. 2016,phylum,Candidatus Absconditibacteriota
+Alcanivoraceae,family,Alcanivoracaceae
+Alcanivoraxaceae,family,Alcanivoracaceae
+Desulfonatronumaceae,family,Desulfonatronaceae
+Haliangiaceae,family,Kofleriaceae
+Candidatus Procabacteriales Garrity et al. 2003,order,Candidatus Procaibacterales
+Candidatus Procabacteriaceae Garrity et al. 2003,family,Candidatus Procaibacteraceae
+Thermodesulfobiaceae Mori et al. 2004,family,Thermodesulfobiaceae
+'Parvularculaceae',family,Parvularculaceae
+Lentisphaeraeota,phylum,Lentisphaerota
+Lentisphaerae,phylum,Lentisphaerota
+Lentisphaerota corrig. Cho et al. 2021,phylum,Lentisphaerota
+Peredibacteraceae,family,Bacteriovoracaceae
+Lentisphaerae subgroup L5,order,Lentisphaerales
+Lentisphaerae subgroup L1,order,Victivallales
+Hydrogenimonaceae Garrity et al. 2004,family,Hydrogenimonadaceae
+Hydrogenimonadaceae Waite et al. 2020,family,Hydrogenimonadaceae
+candidate division Termite Group 3,class,Chitinivibrionia
+candidate division TG3,class,Chitinivibrionia
+Dehalococcoidetes,class,Dehalococcoidia
+Candidatus Solibacterales,order,Bryobacterales
+'Solibacteraceae',family,Solibacteraceae
+'Kopriimonadales',order,Kopriimonadales
+'Kopriimonadaceae',family,Kopriimonadaceae
+candidate division GN02,phylum,Candidatus Altimarinota
+Candidatus Gracilibacteria Rinke et al. 2013,phylum,Candidatus Altimarinota
+Ktedobacteria,class,Ktedonobacteria
+Ktedobacterales,order,Ktedonobacterales
+Ktedobacteraceae,family,Ktedonobacteraceae
+'Candidtus Salinosulfoleibacteria',phylum,Candidatus Salinosulfoleibacteria
+Catenulisporineae,order,Catenulisporales
+Opitutae,class,Opitutia
+Opitutia corrig.,class,Opitutia
+candidate division Waste Water of Evry 3,phylum,candidate division WWE3
+Candidatus Katanobacteria,phylum,candidate division WWE3
+candidate division ZB3,class,Candidatus Marinamargulisbacteria
+Endomicrobia,class,Endomicrobiia
+Endomicrobiia corrig. Zheng et al. 2018,class,Endomicrobiia
+Litoricolaceae,family,Litorivicinaceae
+candidate division WWE1,phylum,Candidatus Cloacimonadota
+Candidatus Cloacimonetes Rinke et al. 2013,phylum,Candidatus Cloacimonadota
+Aminanaerobia,phylum,Synergistota
+Synergistaeota,phylum,Synergistota
+Synergistetes Jumas-Bilak et al. 2009,phylum,Synergistota
+Synergistota corrig. Jumas-Bilak et al. 2021,phylum,Synergistota
+Group TA,family,Syntrophorhabdaceae
+Acidobacteria subdivision 8,class,Holophagae
+Sulfobacillaceae,family,Clostridiales Family XVII. Incertae Sedis
+Bacillales Family XI. Incertae Sedis,family,Gemellaceae
+Gemellaceae Chuvochina et al. 2024,family,Gemellaceae
+Anaerovoracaceae Chuvochina et al. 2024,family,Anaerovoracaceae
+Eubacteriales Family XIII. Incertae Sedis,family,Anaerovoracaceae
+Clostridiales Family XVIII. Incertae Sedis,family,Symbiobacteriaceae
+Mollicutaeota Oren et al. 2015,phylum,Mycoplasmatota
+Mollicutota,phylum,Mycoplasmatota
+Tenericutes Murray 1984,phylum,Mycoplasmatota
+Sinobacteraceae,family,Nevskiaceae
+Solimonadaceae,family,Nevskiaceae
+Zetaproteobacteria,class,Candidatius Mariprofundia
+Candidatus Mariprofundales,order,Mariprofundales
+Methanophagales,order,Candidatus Methanophagales
+Actinopolysporineae,order,Actinopolysporales
+Mzabimycetaceae Saker et al. 2015,family,Actinopolysporaceae
+Kineosporiineae,order,Kineosporiales
+candidate division NC10,phylum,Candidatus Methylomirabilota
+Synergistaceae Jumas-Bilak et al. 2009,family,Synergistaceae
+Candidatus Thaumarchaeota,phylum,Nitrososphaerota
+Nitrososphaeraeota,phylum,Nitrososphaerota
+Thaumarchaeota,phylum,Nitrososphaerota
+Candidatus Methylacidiphilales,order,Methylacidiphilales
+Candidatus Methylacidiphilaceae,family,Methylacidiphilaceae
+'Salinisphaerales',order,Salinisphaerales
+Candidatus Aenigmarchaeota Rinke et al. 2013,phylum,Candidatus Aenigmatarchaeota
+Candidatus Diapherotrites Rinke et al. 2013,phylum,Candidatus Iainarchaeota
+Candidatus Borkfalkiaceae Hildebrand et al. 2020,family,Christensenellaceae
+Candidatus Borkfalkiaceae,family,Christensenellaceae
+Candidatus Comantemaea Hildebrand et al. 2019,family,Christensenellaceae
+Catabacteraceae,family,Christensenellaceae
+Catabacteriaceae,family,Christensenellaceae
+candidate division EM 19,phylum,Candidatus Calescibacteriota
+Candidatus Calescamantes Rinke et al. 2013,phylum,Candidatus Calescibacteriota
+candidate division CD12,phylum,Candidatus Aerophobota
+Candidatus Aerophobetes Rinke et al. 2013,phylum,Candidatus Aerophobota
+Chthonomonadetes,class,Chthonomonadia
+Chthonomonadia corrig.,class,Chthonomonadia
+Candidatus Hydrothermae,phylum,Candidatus Hydrothermota
+Candidatus Hydrothermota (ex Chuvochina et al. 2019),phylum,Candidatus Hydrothermota
+Ignavibacteraeota,phylum,Ignavibacteriota
+Ignavibacteriae,phylum,Ignavibacteriota
+Ignavibacteria (sic) Podosokorskaya et al. 2011,phylum,Ignavibacteriota
+Ignavibacteriota corrig. Podosokorskaya et al. 2021,phylum,Ignavibacteriota
+Candidatus Eremiobacteraeota Ji et al. 2017,phylum,Vulcanimicrobiota
+Candidatus Eremiobacterota corrig. Ji et al. 2017,phylum,Vulcanimicrobiota
+Eremiobacterota,phylum,Vulcanimicrobiota
+Candidatus Etaproteobacteria,order,Magnetococcales
+Jiangellineae,order,Jiangellales
+Methanoplasmatales,order,Methanomassiliicoccales
+Nitrospinota corrig. Lucker et al. 2021,phylum,Nitrospinota
+Candidatus Zixibacteria Castelle et al. 2013,phylum,Candidatus Zixiibacteriota
+Candidate division OctSpa1-106,phylum,Candidatus Fervidibacterota
+Candidatus Fervidibacteria Rinke et al. 2013,phylum,Candidatus Fervidibacterota
+Candidatus Methanoperedenaceae,family,Candidatus Methanoperedentaceae
+candidate division GAL15,phylum,Candidatus Sysuimicrobiota
+candidate phylum NAG1,phylum,Candidatus Geoarchaeota
+novel archaeal group I,phylum,Candidatus Geoarchaeota
+novel archaeal group II,phylum,candidate phylum NAG2
+Candidatus Nanohaloarchaeota Rinke et al. 2013,phylum,Candidatus Nanohalarchaeota
+Draconibacteriaceae,family,Prolixibacteraceae
+Acidobacteria subdivision 4,class,Blastocatellia
+Candidate Phyla Radiation 1,phylum,candidate division CPR1
+Candidate Phyla Radiation 2,phylum,candidate division CPR2
+Candidate Phyla Radiation 3,phylum,candidate division CPR3
+Candidatus Peregrinibacteria Brown et al. 2015,phylum,Candidatus Peregrinibacteriota
+Brachyspiriales,order,Brachyspirales
+Leptospiriales,order,Leptospirales
+Halorubraceae,family,Haloferacaceae
+candidate phylum KD3-62,phylum,candidate division KD3-62
+Candidatus Methanofastidiosa Nobu et al. 2016,class,Candidatus Methanofastidiosia
+OM60 clade,family,Halieaceae
+Candidatus Thorarchaeia Seitz et al. 2016,phylum,Candidatus Thorarchaeota
+candidate division Hyd24-12,phylum,Candidatus Fermentibacterota
+Candidatus Fermentibacteria Kirkegaard et al. 2016 (phylum),phylum,Candidatus Fermentibacterota
+Clostridiales Family XI. Incertae Sedis,class,Tissierellia
+Tissierellaceae Wu et al. 2020,family,Tissierellaceae
+Candidatus Rokubacteria Hug et al. 2016,phylum,Candidatus Rokuibacteriota
+Candidatus Curtissbacteria Brown et al. 2015,phylum,Candidatus Curtissiibacteriota
+Candidatus Daviesbacteria Brown et al. 2015,phylum,Candidatus Daviesiibacteriota
+Candidatus Levybacteria Brown et al. 2015,phylum,Candidatus Levyibacteriota
+Candidatus Gottesmanbacteria Brown et al. 2015,phylum,Candidatus Gottesmaniibacteriota
+Candidatus Shapirobacteria Brown et al. 2015,phylum,Candidatus Shapironibacteriota
+Candidatus Woesebacteria Brown et al. 2015,phylum,Candidatus Woeseibacteriota
+Candidatus Roizmanbacteria Brown et al. 2015,phylum,Candidatus Roizmaniibacteriota
+Candidatus Pacebacteria Brown et al. 2015,phylum,Minisyncoccota
+Candidatus Paceibacterota,phylum,Minisyncoccota
+Candidatus Collierbacteria Brown et al. 2015,phylum,Candidatus Collieribacteriota
+Candidatus Beckwithbacteria Brown et al. 2015,phylum,Candidatus Beckwithiibacteriota
+Candidatus Campbellbacteria Brown et al. 2015,phylum,Candidatus Campbelliibacteriota
+Candidatus Falkowbacteria,phylum,Candidatus Falkowiibacteriota
+Candidatus Nomurabacteria Brown et al. 2015,phylum,Candidatus Nomuraibacteriota
+Candidatus Amesbacteria Brown et al. 2015,phylum,Candidatus Amesiibacteriota
+Candidatus Magasanikbacteria Brown et al. 2015,phylum,Candidatus Magasanikiibacteriota
+Candidatus Uhrbacteria Brown et al. 2015,phylum,Candidatus Uhriibacteriota
+Candidatus Yanofskybacteria Brown et al. 2015,phylum,Candidatus Yanofskyibacteriota
+Candidatus Kaiserbacteria Brown et al. 2015,phylum,Candidatus Kaiseribacteriota
+Candidatus Wolfebacteria Brown et al. 2015,phylum,Candidatus Wolfeibacteriota
+Candidatus Adlerbacteria Brown et al. 2015,phylum,Candidatus Adleribacteriota
+Candidatus Moranbacteria Brown et al. 2015,phylum,Candidatus Moraniibacteriota
+Candidatus Giovannonibacteria Brown et al. 2015,phylum,Candidatus Giovannoniibacteriota
+Candidatus Jorgensenbacteria Brown et al. 2015,phylum,Candidatus Joergenseniibacteriota
+Candidatus Kuenenbacteria Brown et al. 2015,phylum,Candidatus Kueneniibacteriota
+Candidatus Azambacteria Brown et al. 2015,phylum,Candidatus Azamiibacteriota
+candidate division WPS-1,family,Tepidisphaeraceae
+Frateuriaceae,family,Rhodanobacteraceae
+Hadesarchaea,class,Candidatus Hadarchaeia
+SAGMEG,class,Candidatus Hadarchaeia
+Candidatus Tectomicrobia Wilson et al. 2014,phylum,Candidatus Tectimicrobiota
+Longimicrobia,class,Longimicrobiia
+Longimicrobiia corrig. Pascual et al. 2016,class,Longimicrobiia
+Candidatus Fibromonadales Abdul Rahman et al. 2016,order,Candidatus Fibrimonadales
+Candidaus Fibromonadaceae Abdul Rahman et al. 2016,family,Candidatus Fibrimonadaceae
+Candidatus Abawacabacteria Anantharaman et al. 2016,phylum,Candidatus Abawacaibacteriota
+Candidatus Coatesbacteria Anantharaman et al. 2016,phylum,Candidatus Coatesiibacteriota
+Candidatus Delongbacteria Anantharaman et al. 2016,phylum,Candidatus Delongiibacteriota
+Candidatus Doudnabacteria Anantharaman et al. 2016,phylum,Candidatus Doudnaibacteriota
+Candidatus Edwardsbacteria Anantharaman et al. 2016,phylum,Candidatus Edwardsiibacteriota
+Candidatus Eisenbacteria Anantharaman et al. 2016,phylum,Candidatus Eiseniibacteriota
+Candidatus Firestonebacteria Anantharaman et al. 2016,phylum,Candidatus Firestoneibacteriota
+Candidatus Fischerbacteria Anantharaman et al. 2016,phylum,Candidatus Fischeribacteriota
+Candidatus Fraserbacteria Anantharaman et al. 2016,phylum,Candidatus Fraseribacteriota
+Candidatus Glassbacteria Anantharaman et al. 2016,phylum,Candidatus Glassiibacteriota
+Candidatus Handelsmanbacteria Anantharaman et al. 2016,phylum,Candidatus Handelsmaniibacteriota
+Candidatus Lindowbacteria Anantharaman et al. 2016,phylum,Candidatus Lindowiibacteriota
+Candidatus Margulisbacteria Anantharaman et al. 2016,phylum,Candidatus Margulisiibacteriota
+Candidatus Raymondbacteria Anantharaman et al. 2016,phylum,Candidatus Raymondiibacteriota
+Candidatus Riflebacteria Anantharaman et al. 2016,phylum,Candidatus Rifleibacteriota
+Candidatus Schekmanbacteria Anantharaman et al. 2016,phylum,Candidatus Schekmaniibacteriota
+Candidatus Wallbacteria Anantharaman et al. 2016,phylum,Candidatus Walliibacteriota
+Candidatus Blackburnbacteria Anantharaman et al. 2016,phylum,Candidatus Blackburniibacteriota
+Candidatus Woykebacteria Anantharaman et al. 2016,phylum,Candidatus Woykeibacteriota
+Candidatus Chisholmbacteria Anantharaman et al. 2016,phylum,Candidatus Chisholmiibacteriota
+Candidatus Andersenbacteria Anantharaman et al. 2016,phylum,Candidatus Anderseniibacteriota
+Candidatus Brennerbacteria Anantharaman et al. 2016,phylum,Candidatus Brenneribacteriota
+Candidatus Buchananbacteria Anantharaman et al. 2016,phylum,Candidatus Buchananiibacteriota
+Candidatus Colwellbacteria Anantharaman et al. 2016,phylum,Candidatus Colwelliibacteriota
+Candidatus Harrisonbacteria Anantharaman et al. 2016,phylum,Candidatus Harrisoniibacteriota
+Candidatus Jacksonbacteria Anantharaman et al. 2016,phylum,Candidatus Jacksoniibacteriota
+Candidatus Kerfeldbacteria Anantharaman et al. 2016,phylum,Candidatus Kerfeldiibacteriota
+Candidatus Komeilibacteria Anantharaman et al. 2016,phylum,Candidatus Komeiliibacteriota
+Candidatus Liptonbacteria Anantharaman et al. 2016,phylum,Candidatus Liptoniibacteriota
+Candidatus Lloydbacteria Anantharaman et al. 2016,phylum,Candidatus Lloydiibacteriota
+Candidatus Nealsonbacteria Anantharaman et al. 2016,phylum,Candidatus Nealsoniibacteriota
+Candidatus Niyogibacteria Anantharaman et al. 2016,phylum,Candidatus Niyogiibacteriota
+Candidatus Portnoybacteria Anantharaman et al. 2016,phylum,Candidatus Portnoyibacteriota
+Candidatus Ryanbacteria Anantharaman et al. 2016,phylum,Candidatus Ryaniibacteriota
+Candidatus Spechtbacteria Anantharaman et al. 2016,phylum,Candidatus Spechtiibacteriota
+Candidatus Staskawiczbacteria Anantharaman et al. 2016,phylum,Candidatus Staskawicziibacteriota
+Candidatus Sungbacteria Anantharaman et al. 2016,phylum,Candidatus Sungiibacteriota
+Candidatus Tagabacteria Anantharaman et al. 2016,phylum,Candidatus Tagaibacteriota
+Candidatus Taylorbacteria Anantharaman et al. 2016,phylum,Candidatus Tayloriibacteriota
+Candidatus Terrybacteria Anantharaman et al. 2016,phylum,Candidatus Terryibacteriota
+Candidatus Veblenbacteria Anantharaman et al. 2016,phylum,Candidatus Vebleniibacteriota
+Candidatus Vogelbacteria Anantharaman et al. 2016,phylum,Candidatus Vogeliibacteriota
+Candidatus Wildermuthbacteria Anantharaman et al. 2016,phylum,Candidatus Wildermuthiibacteriota
+Candidatus Yonathbacteria Anantharaman et al. 2016,phylum,Candidatus Yonathiibacteriota
+Candidatus Zambryskibacteria Anantharaman et al. 2016,phylum,Candidatus Zambryskiibacteriota
+Candidatus Desantisbacteria Probst et al. 2017,phylum,Candidatus Desantisiibacteriota
+Sporomusa subbranch,family,Sporomusaceae
+Rhodothermota corrig. Munoz et al. 2021,phylum,Rhodothermota
+Salinibacteraceae Munoz et al. 2017,family,Salinibacteraceae
+Bacteroidetes Order III. Incertae sedis,family,Thermonemataceae
+Candidatus Kryptonia Eloe-Fadrosh et al. 2016,phylum,Candidatus Kryptoniota
+Leptolyngbyoideae,family,Leptolyngbyaceae
+Aphanothecoideae,family,Aphanothecaceae
+Cyanotrichaceae corrig.,family,Cyanothrichaceae
+Pleurocapsaceae,family,Hyellaceae
+Microcoleae,family,Microcoleaceae
+Phormidiaceae,family,Oscillatoriaceae
+Morganellaceae Adeolu et al. 2016,family,Morganellaceae
+Candidatus Caenarcaniphilales Soo et al. 2014,order,Candidatus Caenarcanales
+Candidatus Methanomethyliales Vanwonterghem et al. 2016,order,Candidatus Methanomethylicales
+Candidatus Methanomethyliaceae Vanwonterghem et al. 2016,family,Candidatus Methanomethylicaceae
+Holosporineae,order,Holosporales
+Kiritimatiellae Spring et al. 2017,class,Kiritimatiellia
+Kiritimatiellales Spring et al. 2017,order,Kiritimatiellales
+Kiritimatiellaceae Spring et al. 2017,family,Kiritimatiellaceae
+Calditrichota corrig. Kublanov et al. 2021,phylum,Calditrichota
+Candidatus Heimdallarchaeia,phylum,Candidatus Heimdallarchaeota
+Candidatus Heimdallarchaeota (ex Bulzu et al. 2019),phylum,Candidatus Heimdallarchaeota
+Balneolota corrig. Hahnke et al. 2021,phylum,Balneolota
+'Methylacidiphilae',class,Methylacidiphilae
+Calditrichia Kublanov et al. 2022,class,Calditrichia
+'Cyanomargaritaceae',family,Cyanomargaritaceae
+Candidatus Homeothermaceae,family,Muribaculaceae
+Dysgonamonadaceae,family,Dysgonomonadaceae
+Dysgonomonadaceae Garcia-Lopez et al. 2020,family,Dysgonomonadaceae
+Hydrogenophilalia,class,Hydrogenophilia
+Candidatus Goldbacteria Hernsdorf et al. 2017,phylum,Candidatus Goldiibacteriota
+Pyrinomonadaceae Wust et al. 2016,family,Pyrinomonadaceae
+Candidatus Dormibacteraeota Ji et al. 2017,phylum,Candidatus Dormiibacterota
+Emcibacteraceae Iino et al. 2016,family,Emcibacteraceae
+candidate division SURF-CP-1,class,Candidatus Abyssobacteria
+Candidatus Abyssubacteria Momper et al. 2017,class,Candidatus Abyssobacteria
+Candidatus Abyssubacteria,class,Candidatus Abyssobacteria
+Candidatus Aureabacteria,phylum,Candidatus Auribacterota
+Candidatus Saccharimonia,class,Candidatus Saccharimonadia
+Candidatus Saccharimonales McLean et al. 2020,order,Candidatus Saccharimonadales
+Abditibacteria,class,Abditibacteriia
+Abditibacteriia corrig. Tahon et al. 2018,class,Abditibacteriia
+Candidatus Sacchiramonaceae McLean et al. 2020,family,Candidatus Saccharimonadaceae
+Vampirovibrionales (ex Soo et al. 2015) Chuvochina et al. 2024,order,Vampirovibrionales
+Candidatus Thermoplasmatota,phylum,Thermoplasmatota
+Diaforarchaea,phylum,Thermoplasmatota
+Thermoplasmatota Chuvochina et al. 2024,phylum,Thermoplasmatota
+Candidatus Thermofonsia Ward et al. 2018,class,Candidatus Thermofontia
+Candidatus Babeliales Yeoh et al. 2016,order,Candidatus Babeliales
+Candidatus Babeliaceae Yeoh et al. 2016,family,Candidatus Babeliaceae
+Candidatus Methanomethylophilaceae,family,Methanomethylophilaceae
+Methanomethylophilaceae Borrel et al. 2024,family,Methanomethylophilaceae
+Candidatus Brocadiae,class,Candidatus Brocadiia
+Candidatus Altiarchaeota Probst et al. 2018,phylum,Candidatus Altarchaeota
+Candidatus Huberarchaea Probst et al. 2018,phylum,Candidatus Huberarchaeota
+Candidatus Thalassarchaea,class,Candidatus Poseidoniia
+Candidatus Thalassoarchaea Martin-Cuadrado et al. 2015,class,Candidatus Poseidoniia
+Baltobacterales,order,Vulcanimicrobiales
+Candidatus Baltobacterales,order,Vulcanimicrobiales
+Acuticoccaceae,family,Amorphaceae
+Candidatus Krumholzibacteria Youssef et al. 2019,class,Candidatus Krumholzibacteriia
+Candidatus Mcinerneyibacteriota Yadav et al. 2020,phylum,Candidatus Macinerneyibacteriota
+Candidatus Anoxychlamydiales Dharamshi et al. 2023,order,Candidatus Anoxychlamydiales
+Lichenibacteriaceae,family,Lichenihabitantaceae
+Candidatus Pyropristinus Coleman et al. 2016,phylum,Candidatus Caldipriscota
+Candidatus Stahlbacteria Dombrowski et al. 2017,phylum,Candidatus Stahliibacteriota
+Terrimicrobia Garcia-Lopez et al. 2020,class,Terrimicrobiia
+Candidatus Muirbacteria Barnum et al. 2018,phylum,Candidatus Muiribacteriota
+Longinemaceae,family,Longinemataceae
+Thiovulaceae,family,Sulfurimonadaceae
+Candidatus Baldrarchaeota (ex Caceres 2019),phylum,Candidatus Baldrarchaeota
+Erysipelatoclostridiaceae Zakham et al. 2019,family,Coprobacillaceae
+Candidatus Phaeomarinibacteraceae,family,Parvibaculaceae
+Candidatus Phaeomarinobacteraceae,family,Parvibaculaceae
+Laspinemaceae,family,Laspinemataceae
+Cyanobacteriaceae,family,Geminocystaceae
+Candidatus Acidoferrales Epihov et al. 2021,order,Candidatus Acidiferrales
+Breoghaniaceae,family,Stappiaceae
+Pseudoxanthobacteraceae,family,Segnochrobactraceae
+Candidatus Freyarchaeota (ex Caceres 2019),phylum,Candidatus Freyarchaeota
+Baltobacteraceae,family,Vulcanimicrobiaceae
+Candidatus Baltobacteraceae Ward et al. 2019,family,Vulcanimicrobiaceae
+Candidatus Xenobia Ji et al. 2021,class,Candidatus Xenobia
+Candidatus Eremiobacteria,class,Vulcanimicrobiia
+Candidatus Eremiobacteriia corrig. Ward et al. 2019,class,Vulcanimicrobiia
+Eremiobacteriia,class,Vulcanimicrobiia
+Fodinicurvataceae,family,Rhodovibrionaceae
+Candidatus Zymogeniaceaea Murphy et al. 2021,family,Candidatus Zymogenaceae
+Aquichromatiaceae Yang et al. 2017,family,Aquichromatiaceae
+Cyanobiaceae,family,Prochlorococcaceae
+Spirosomaceae Larkin and Borrall 1978 (Approved Lists 1980),family,Spirosomataceae
+Spirosomataceae corrig.,family,Spirosomataceae
+Candidatus Detorarchales,order,Candidatus Yaplasmales
+Candidatus Haloplasmatales,order,Candidatus Halarchaeoplasmatales
+Candidatus Haloplasmataceae,family,Candidatus Halarchaeoplasmataceae
+Candidatus Chromulinavoraceae,family,Candidatus Chromulinivoraceae
+Candidatus Izemoplasmales Zheng et al. 2021,order,Candidatus Izemoplasmatales
+Candidatus Izemoplasmaceae Zheng et al. 2021,family,Candidatus Izemoplasmataceae
+Candidatus Quolodiales,order,Candidatus Rariloculales
+Candidatus Rariloculudales,order,Candidatus Rariloculales
+Candidatus Quolodiaceae,family,Candidatus Rariloculaceae
+Candidatus Rariloculuceae,family,Candidatus Rariloculaceae
+Candidatus Atilosales,order,Candidatus Spongiisociales
+Candidatus Spongiisociudales Nguyen 2022,order,Candidatus Spongiisociales
+Candidatus Cofanosaceae,family,Candidatus Spongiisociaceae
+Candidatus Spongiisociaeae Nguyen 2022,family,Candidatus Spongiisociaceae
+Candidatus Aldehyrespiratoraceae Nguyen 2022,family,Candidatus Aldehydirespiratoraceae
+Candidatus Naporanaceae,family,Candidatus Aldehydirespiratoraceae
+Candidatus Hopanoidivoraceae Nguyen 2022,family,Candidatus Hopanoidivoransaceae
+Candidatus Ifrisanaceae,family,Candidatus Hopanoidivoransaceae
+Candidatus Poriferisodaliceae Nguyen 2022,family,Candidatus Poriferisodalaceae
+Candidatus Rafemanaceae,family,Candidatus Poriferisodalaceae
+Candidatus Dadribiales,order,Futianiales
+Futianiales Liu et al. 2024,order,Futianiales
+Bdellovibrionota Waite et al. 2021,phylum,Bdellovibrionota
+Wohlfahrtiimonadaceae Chuvochina et al. 2024,family,Ignatzschineriaceae
+Wohlfahrtiimonadaceae,family,Ignatzschineriaceae
+Candidatus Cutipiscaceae,family,Candidatus Spongiicolonaceae
+Candidatus Stagruxiaceae,family,Candidatus Oxydemutatoraceae
+Candidatus Fedufriales,order,Candidatus Porifericomitales
+Candidatus Fedufriaceae,family,Candidatus Porifericomitaceae
+Candidatus Afracanaceae,family,Candidatus Azotimanducaceae
+Candidatus Azophiluceae,family,Candidatus Azotimanducaceae
+Candidatus Salivitaceae,family,Candidatus Azotimanducaceae
+Candidatus Dostaciales,order,Candidatus Foliamicales
+Candidatus Dostaciaceae,family,Candidatus Foliamicaceae
+Desulfobacteriaceae Galushko and Kuever 2021,family,Desulfobacteriaceae
+Desulfocucumaceae Watanabe et al. 2021,family,Desulfocucumaceae
+Desulfocucumeraceae corrig. Watanabe et al. 2021,family,Desulfocucumaceae
+Natronogracilivirgulaceae,family,Cyclonatronaceae
+Thermomicrobaeota,phylum,Thermomicrobiota
+Thermomicrobiota corrig. Garrity and Holt 2021,phylum,Thermomicrobiota
+Gloeobacteria,class,Cyanophyceae
+Candidatus Debefiota,phylum,Candidatus Electryoneota
+Candidatus Hisadosaceae,family,Candidatus Poriferihabitaceae
+Candidatus Tinosarchaceae,family,Candidatus Haiyanarchaeaceae
+Clostridium thermoautotrophicum group,order,Neomorellales
+cluster VII,order,Neomorellales
+Moorella group,order,Neomorellales
+Moorellales,order,Neomorellales
+Moorellaceae,family,Neomoorellaceae
+Candidatus Podoxiota,phylum,Candidatus Lernaellota
+Candidatus Urusiota,phylum,Candidatus Hinthialibacterota
+Alterococcaeae,family,Alterococcaceae
+Steroidobacterales Chuvochina et al. 2024,order,Steroidobacterales
+Candidatus Fumotiscaceae,family,Candidatus Subterrananammoxibiaceae
+Haladaptataceae Chuvochina et al. 2024,family,Haladaptataceae
+Candidatus Asgardarchaeia (ex Eme et al. 2023),class,Candidatus Asgardarchaeia (ex Tamarit et al. 2024)
+Candidatus Asgardarchaeia,class,Candidatus Asgardarchaeia (ex Tamarit et al. 2024)
+Candidatus Asgardarchaeales (ex Eme et al. 2023),order,Candidatus Asgardarchaeales (ex Tamarit et al. 2024)
+Candidatus Asgardarchaeales,order,Candidatus Asgardarchaeales (ex Tamarit et al. 2024)
+Candidatus Asgardarchaceae,family,Candidatus Asgardarchaeaceae
+Caldicellulosiruptorales Chuvochina et al. 2024,order,Caldicellulosiruptorales
+Caldicellulosiruptoraceae Chuvochina et al. 2024,family,Caldicellulosiruptoraceae
+Candidatus Caldiarchaeales Cavalier-Smith 2014,order,Candidatus Caldarchaeales
+Candidatus Caldarchaeaceae corrig. Rinke et al. 2021,family,Candidatus Caldarchaeaceae
+Candidatus Caldiarchaeaceae,family,Candidatus Caldarchaeaceae
+Candidatus Modulibacteria Sekiguchi et al. 2015,phylum,Candidatus Moduliflexota
+Candidatus Saxararchaceae,family,Candidatus Bathyarchaeaceae
+Candidatus Syntraliphaticia Liu et al. 2020,class,Candidatus Syntrophaliphaticia
+Candidatus Hakubanellales Merino et al. 2020,order,Candidatus Hakubellales
+Candidatus Hakubanellaceae Merino et al. 2020,family,Candidatus Hakubellaceae
+Candidatus Hebobacteria Carlton et al. 2023,class,Candidatus Hebobacteria
+Candidatus Mixasiia,class,Candidatus Hebobacteria
+Candidatus Pufisiia,class,Candidatus Zipacnadia
+Candidatus Zipacnadia Carlton et al. 2023,class,Candidatus Zipacnadia
+Candidatus Hebobacterales Carlton et al. 2023,order,Candidatus Hebobacterales
+Candidatus Lablamiales,order,Candidatus Hebobacterales
+Candidatus Pufisiales,order,Candidatus Zipacnadales
+Candidatus Idrufitiaceae,family,Candidatus Hebobacteraceae
+Candidatus Pufisiaceae,family,Candidatus Zipacnadaceae
+Salinicoccaceae Chuvochina et al. 2024,family,Salinicoccaceae
+Candidatus Tiserarchaceae,family,Candidatus Calditenuaceae
+Leptolyngbyales Chuvochina et al. 2024,order,Leptolyngbyales
+Candidatus Borkfalkiales,order,Christensenellales
+Candidatus Nupofiia,class,Candidatus Fermentithermobacillia
+Candidatus Nupofiales,order,Candidatus Fermentithermobacillales
+Candidatus Nupofiaceae,family,Candidatus Fermentithermobacillaceae
+Candidatus Altiarchaeaceae Probst et al. 2014,family,Candidatus Altarchaeaceae
+Candidatus Caldatribacteriota Hahn et al. 2020,phylum,Candidatus Caldatribacteriota
+Vampirovibrionia Chuvochina et al. 2024,class,Vampirovibriophyceae
+Vampirovibrionophyceae corrig.,class,Vampirovibriophyceae
+"Vampirovibriophyceae Strunecky & Mares, 2023",class,Vampirovibriophyceae
+Leptospiria Chuvochina et al. 2024,class,Leptospiria
+Candidatus Paceibacteria,class,Minisyncoccia
+Candidatus Paceibacterales,order,Minisyncoccales
+Phormidesmales,order,Phormidesmidales
+Phormidesmidales corrig.,order,Phormidesmidales
+Amphibacillaceae Chuvochina et al. 2024,family,Amphibacillaceae
+Anoxybacillaceae Chuvochina et al. 2024,family,Anoxybacillaceae
+Fictibacillaceae Chuvochina et al. 2024,family,Fictibacillaceae
+Candidatus Sepodriales,order,Natronospirales
+Candidatus Sepodriaceae,family,Natronospiraceae
+Candidatus Minisyncoccaceae,family,Minisyncoccaceae
+Candidatus Merdousiaceae Pallen et al. 2022,family,Intestinicryptomonaceae
+Candidatus Merdousiaceae,family,Intestinicryptomonaceae
+Candidatus Lokiarchaeota,phylum,Promethearchaeota
+Candidatus Lokiarchaeia Bulzu et al. 2019,class,Promethearchaeia
+Candidatus Lokiarchaeia,class,Promethearchaeia
+Candidatus Prometheoarchaeales Pallen et al. 2022,order,Promethearchaeales
+Candidatus Prometheoarchaeales,order,Promethearchaeales
+Candidatus Prometheoarchaeaceae,family,Promethearchaeaceae
+Candidatus Nitrosotaleales,order,Nitrosotaleales
+Candidatus Idupariales,order,Candidatus Australimonadales
+Candidatus Idupariaceae,family,Candidatus Australimonadaceae
+Candidatus Udisosales,order,Candidatus Eutrophobiales
+Candidatus Udisosaceae,family,Candidatus Eutrophobiaceae
+Candidatus Otrunosaceae,family,Candidatus Marisalimonadaceae
+Candidatus Fogupanaceae,family,Candidatus Seribacteraceae
+Candidatus Polydorabacteraceae,family,Candidatus Polydorabacteraceae (nom. illeg.)
+Candidatus Methanogastraceae corrig. Chadwick et al. 2022,family,Candidatus Methanogasteraceae
+Candidatus Usuriscales,order,Candidatus Tepidiaquacellales
+Candidatus Methanomethylia Vanwonterghem et al. 2016,class,Methanosuratincolia
+Candidatus Methanomethylicia,class,Methanosuratincolia
+Candidatus Methanosuratincolia,class,Methanosuratincolia
+Candidatus Methanosuratincolales,order,Methanosuratincolales
+Candidatus Methanosuratincolaceae,family,Methanosuratincolaceae
+Candidatus Heimdallarchaeia,class,Candidatus Heimdallarchaeia (ex Rinke et al. 2021) (nom. nud.)
+Candidatus Usinibraceae,family,Candidatus Phycocordibacteraceae
