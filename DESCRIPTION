@@ -1,8 +1,8 @@
 Package: whatbacteria
 Title: whatbacteria
-Version: 0.0.1.0
+Version: 0.2.0.9000
 Author: Vincent Tu <tuv@email.chop.edu>
-Maintainer: Vincent Tu <tuv@email.chop.edu>
+Maintainer: Kyle Bittinger <kylebittinger@gmail.com>
 Description: Taxon phenotype and susceptibility databases for the mirix package.
 License: GPL-3
 Encoding: UTF-8
@@ -13,6 +13,6 @@ Suggests:
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
-Depends: 
-    R (>= 3.5)
+Depends:
+    R (>= 4.1.0)
 Config/testthat/edition: 3
