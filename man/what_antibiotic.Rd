@@ -7,8 +7,8 @@
 what_antibiotic(
   lineage,
   antibiotic,
-  db = taxon_susceptibility,
-  synonyms = taxon_synonyms
+  db = whatbacteria::taxon_susceptibility,
+  synonyms = whatbacteria::taxon_synonyms
 )
 }
 \arguments{
@@ -18,6 +18,9 @@ what_antibiotic(
 
 \item{db}{A data frame with columns named "taxon", "rank", "antibiotic",
 and "value"}
+
+\item{synonyms}{A data frame of taxonomic synonyms with columns "name" and
+"correct_name"}
 }
 \value{
 A vector of assigned susceptibility values, which should be either

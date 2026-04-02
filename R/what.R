@@ -4,6 +4,8 @@
 #' @param antibiotic The name of the antibiotic or antibiotic class in \code{db}
 #' @param db A data frame with columns named "taxon", "rank", "antibiotic",
 #'   and "value"
+#' @param synonyms A data frame of taxonomic synonyms with columns "name" and
+#'   "correct_name"
 #' @return A vector of assigned susceptibility values, which should be either
 #'   "susceptible", "resistant", or \code{NA}
 #' @details
@@ -24,8 +26,8 @@
 #' @export
 what_antibiotic <- function (lineage,
                              antibiotic,
-                             db = taxon_susceptibility,
-                             synonyms = taxon_synonyms) {
+                             db = whatbacteria::taxon_susceptibility,
+                             synonyms = whatbacteria::taxon_synonyms) {
   is_relevant <- db$antibiotic %in% antibiotic
   db <- db[is_relevant, c("taxon", "rank", "value")]
 
@@ -40,6 +42,8 @@ what_antibiotic <- function (lineage,
 #'   phenotype of interest
 #' @param db A data frame with columns named "taxon", "rank", and the column
 #'   name specified in \code{phenotype}
+#' @param synonyms A data frame of taxonomic synonyms with columns "name" and
+#'   "correct_name"
 #' @return A vector of assigned phenotype values
 #' @details
 #' This function operates much like \code{antibiotic_susceptibility}, except
@@ -58,8 +62,8 @@ what_antibiotic <- function (lineage,
 #' @export
 what_phenotype <- function (lineage,
                             phenotype,
-                            db = taxon_phenotypes,
-                            synonyms = taxon_synonyms) {
+                            db = whatbacteria::taxon_phenotypes,
+                            synonyms = whatbacteria::taxon_synonyms) {
   db <- db[, c("taxon", "rank", phenotype)]
   # match_annotation() requires a column named "value"
   colnames(db)[3] <- "value"
@@ -179,7 +183,7 @@ clean_taxa <- function(taxa) {
   taxa
 }
 
-resolve_taxa <- function(name, synonyms = taxon_synonyms) {
+resolve_taxa <- function(name, synonyms = whatbacteria::taxon_synonyms) {
   if (is.null(synonyms)) {
     return(name)
   }
@@ -232,7 +236,7 @@ warn_multimatch <- function (multimatch_lineages, multimatch_idxs, taxa) {
   warning(message)
 }
 
-prepare_lineage <- function (x, synonyms = taxon_synonyms) {
+prepare_lineage <- function (x, synonyms = whatbacteria::taxon_synonyms) {
   x |>
     split_lineage_noranks() |>
     lapply(clean_taxa) |>

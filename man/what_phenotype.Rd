@@ -7,8 +7,8 @@
 what_phenotype(
   lineage,
   phenotype,
-  db = taxon_phenotypes,
-  synonyms = taxon_synonyms
+  db = whatbacteria::taxon_phenotypes,
+  synonyms = whatbacteria::taxon_synonyms
 )
 }
 \arguments{
@@ -19,6 +19,9 @@ phenotype of interest}
 
 \item{db}{A data frame with columns named "taxon", "rank", and the column
 name specified in \code{phenotype}}
+
+\item{synonyms}{A data frame of taxonomic synonyms with columns "name" and
+"correct_name"}
 }
 \value{
 A vector of assigned phenotype values
