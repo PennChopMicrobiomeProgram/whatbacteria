@@ -27,7 +27,7 @@ what_antibiotic <- function (lineage,
                              db = taxon_susceptibility) {
   is_relevant <- db$antibiotic %in% antibiotic
   db <- db[is_relevant, c("taxon", "rank", "value")]
-  
+
   susceptibility_values <- match_annotation(lineage, db)
   susceptibility_values
 }
@@ -69,7 +69,7 @@ what_phenotype <- function (lineage,
 #' @param lineage A vector of taxonomic assignments or lineages
 #' @param db A data frame with columns named "taxon", "rank", and "value"
 #' @return A vector of assigned values
-#' 
+#'
 #' @export
 match_annotation <- function (lineage, db) {
   get_rank_specific_db <- function (r) {
@@ -78,7 +78,7 @@ match_annotation <- function (lineage, db) {
   }
   db_ranks <- lapply(rev(taxonomic_ranks), get_rank_specific_db)
   names(db_ranks) <- rev(taxonomic_ranks)
-  
+
   get_values_by_rank <- function (rank_specific_db) {
     taxa_idx <- match_taxa(lineage, rank_specific_db[["taxon"]])
     rank_specific_db[["value"]][taxa_idx]
@@ -87,7 +87,7 @@ match_annotation <- function (lineage, db) {
     db_ranks,
     get_values_by_rank,
     rep("a", length(lineage)))
-  
+
   if (length(lineage) == 1) {
     assigned_values <- first_non_na_value(values_by_rank)
   } else {
@@ -115,7 +115,7 @@ match_taxa <- function (lineages, taxa) {
   if (length(taxa) == 0) {
     return(rep_len(NA_character_, length(lineages)))
   }
-  
+
   taxa_patterns <- paste0("(?<=__|\\b)(?:", taxa, ")\\b")
   lineage_matches <- vapply(
     X = taxa_patterns,
@@ -124,7 +124,7 @@ match_taxa <- function (lineages, taxa) {
     x = lineages,
     perl = TRUE,
     USE.NAMES = TRUE)
-  
+
   # If the user passes only one lineage, lineage_matches will be a vector
   # rather than an array. After some trial and error, I found that it's better
   # to deal with this at each stage of the computation, rather than trying to
@@ -139,7 +139,7 @@ match_taxa <- function (lineages, taxa) {
       "The following lineages match more than one taxon:\n",
       paste(lineages[multi_matches], collapse = "\n"), "\n")
   }
-  
+
   if (n_lineages == 1) {
     taxon_idx <- first_true_idx(lineage_matches)
   } else {
@@ -150,7 +150,7 @@ match_taxa <- function (lineages, taxa) {
 
 #' Return the first index of a boolean vector that is TRUE. If all elements of
 #' the vector are FALSE, return NA. Tempted to call this function minwhich.
-#' 
+#'
 #' @param x A logical vector
 #' @return index of first true in vector or NA
 first_true_idx <- function (x) {
