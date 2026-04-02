@@ -1,0 +1,62 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# whatbacteria
+
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/PennChopMicrobiomeProgram/whatbacteria/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PennChopMicrobiomeProgram/whatbacteria/actions/workflows/R-CMD-check.yaml)
+  <!-- badges: end -->
+
+Taxon phenotype and susceptibility databases for the mirix package.
+
+## Installation
+
+You can install the development version of whatbacteria from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("PennChopMicrobiomeProgram/whatbacteria")
+```
+
+## Usage
+
+```{r}
+library(whatbacteria)
+```
+
+
+To access the databases directly:
+
+```{r}
+head(taxon_phenotypes)
+head(taxon_susceptibility)
+```
+
+To get a particular lineage's susceptibilities:
+
+```{r}
+what_antibiotic(
+   c("Enterococcus faecalis", "Lactobacillus", "Lactobacillus delbrueckii"),
+   "vancomycin", synonyms = NULL)
+```
+
+To get a particular lineage's phenotypes:
+
+```{r}
+what_phenotype(
+   c("Bacteroidetes", "Firmicutes", "Firmicutes; Negativicutes"),
+   "gram_stain", synonyms = NULL)
+```
