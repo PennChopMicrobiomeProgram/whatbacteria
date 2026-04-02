@@ -177,7 +177,6 @@ clean_taxa <- function(taxa) {
 
 resolve_taxa <- function(name, synonyms = taxon_synonyms) {
   synonym_idx <- match(tolower(name), tolower(synonyms$name))
-  cat(synonym_idx)
   ifelse(
     !is.na(synonym_idx),
     synonyms$correct_name[synonym_idx],
