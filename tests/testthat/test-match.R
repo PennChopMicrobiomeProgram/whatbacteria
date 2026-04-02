@@ -233,3 +233,28 @@ test_that("split_lineage_noranks splits on semicolon", {
 test_that("split_lineage_noranks splits on hyphen", {
   expect_equal(split_lineage_noranks("A - B C"), list(c("A", "B C")))
 })
+
+test_that("match_split_lineage_taxa returns first match in lineage", {
+  lineage_xs <- list(
+    c("C d", "Aa", "nm"),
+    c("C d", "Bc", "Dc")
+  )
+  expect_equal(
+    match_split_lineage_taxa(lineage_xs, c("Oo", "Aa", "f f")),
+    c(2, NA)
+  )
+})
+
+test_that("match_split_lineage_taxa works for one lineage", {
+  expect_equal(
+    match_split_lineage_taxa(list(c("Aa", "f f")), c("Oo", "Aa")),
+    2
+  )
+})
+
+test_that("match_split_lineage_taxa warns on multi-match", {
+  expect_warning(
+    match_split_lineage_taxa(list(c("Aa", "f f")), c("Oo", "Aa", "f f")),
+    "Multiple taxa"
+  )
+})

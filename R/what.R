@@ -183,3 +183,44 @@ resolve_taxa <- function(name, synonyms = taxon_synonyms) {
     name
   )
 }
+
+match_split_lineage_taxa <- function(lineage_vectors, taxa) {
+  # Convert to lowercase for case-insensitive matching
+  lineage_vectors_lc <- lapply(lineage_vectors, tolower)
+  taxa_lc <- tolower(taxa)
+  taxa_match_idxs <- lapply(lineage_vectors_lc, match, table = taxa_lc)
+  # If multiple elements in the lineage match to a taxon, we issue a warning.
+  is_multimatch <- vapply(taxa_match_idxs, function(x) sum(!is.na(x)) > 1, FUN.VALUE = TRUE)
+  if (any(is_multimatch)) {
+    warn_multimatch(
+      lineage_vectors[is_multimatch],
+      taxa_match_idxs[is_multimatch],
+      taxa
+    )
+  }
+  # If multiple taxa are matched for a single lineage, we take the first
+  # (highest-ranking) taxon match
+  first_taxa_matches <- vapply(taxa_match_idxs, first_non_na_value, FUN.VALUE = 1)
+  first_taxa_matches
+}
+
+warn_multimatch <- function (multimatch_lineages, multimatch_idxs, taxa) {
+  lineage_toprint <- lapply(multimatch_lineages, paste, collapse = "; ")
+
+  multimatch_idxs <- lapply(multimatch_idxs, function (x) x[!is.na(x)])
+  multimatch_taxa_names <- lapply(multimatch_idxs, function (x) taxa[x])
+  taxa_toprint <- lapply(multimatch_taxa_names, paste, collapse = ", ")
+
+  message_details <- paste(
+    "Lineage",
+    lineage_toprint,
+    "matches multiple taxa of the same rank:",
+    taxa_toprint,
+    collapse = "\n")
+  message <- paste(
+    "Multiple taxa matched for one or more lineages:",
+    message_details,
+    collapse = "\n"
+  )
+  warning(message)
+}
