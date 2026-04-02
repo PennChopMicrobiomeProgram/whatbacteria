@@ -93,11 +93,85 @@ phenotype_species %>%
 phenotype_misc <- read_csv("phenotype_misc.csv", show_col_types = FALSE)
 ```
 
+## Update taxa names
+
+Many names have been updated since the list was first compiled.
+
+```{r}
+updated_phenotype_genus <- phenotype_genus |>
+  rename(old_taxon = taxon) |>
+  mutate(updated_taxon = whatbacteria:::resolve_taxa(old_taxon)) |>
+  select(old_taxon, updated_taxon, everything())
+updated_phenotype_genus_unique <- updated_phenotype_genus |>
+  group_by(updated_taxon) |>
+  filter(n() == 1) |>
+  ungroup()
+updated_phenotype_genus_duplicates <- updated_phenotype_genus |>
+  group_by(updated_taxon) |>
+  filter(n() > 1)
+# If two genera were merged, take the original
+# Otherwise, drop both from the table
+updated_phenotype_genus_dereplicated <- updated_phenotype_genus_duplicates |>
+  filter(old_taxon == updated_taxon) |>
+  ungroup()
+updated_phenotype_genus <- bind_rows(
+  updated_phenotype_genus_unique,
+  updated_phenotype_genus_dereplicated
+)
+updated_phenotype_genus |>
+  filter(updated_taxon != old_taxon)
+updated_phenotype_genus <- updated_phenotype_genus |>
+  select(-old_taxon) |>
+  rename(taxon = updated_taxon)
+```
+
+```{r}
+updated_phenotype_species <- phenotype_species |>
+  rename(old_taxon = taxon) |>
+  mutate(updated_taxon = whatbacteria:::resolve_taxa(old_taxon)) |>
+  select(old_taxon, updated_taxon, everything())
+updated_phenotype_species_unique <- updated_phenotype_species |>
+  group_by(updated_taxon) |>
+  filter(n() == 1) |>
+  ungroup()
+updated_phenotype_species_duplicates <- updated_phenotype_species |>
+  group_by(updated_taxon) |>
+  filter(n() > 1)
+# If two species were merged, take the original
+# Otherwise, drop both from the table
+updated_phenotype_species_dereplicated <- updated_phenotype_species_duplicates |>
+  filter(old_taxon == updated_taxon) |>
+  ungroup()
+updated_phenotype_species <- bind_rows(
+  updated_phenotype_species_unique,
+  updated_phenotype_species_dereplicated
+)
+updated_phenotype_species |>
+  filter(updated_taxon != old_taxon)
+updated_phenotype_species <- updated_phenotype_species |>
+  select(-old_taxon) |>
+  rename(taxon = updated_taxon)
+```
+
+```{r}
+updated_phenotype_misc <- phenotype_misc |>
+  rename(old_taxon = taxon) |>
+  mutate(updated_taxon = whatbacteria:::resolve_taxa(old_taxon)) |>
+  select(old_taxon, updated_taxon, everything())
+updated_phenotype_misc |>
+  filter(updated_taxon != old_taxon)
+updated_phenotype_misc <- updated_phenotype_misc |>
+  select(-old_taxon) |>
+  rename(taxon = updated_taxon)
+```
+
+
+
 ## Final check
 
 ```{r}
 taxon_phenotypes <- bind_rows(
-  phenotype_misc, phenotype_genus, phenotype_species)
+  updated_phenotype_misc, updated_phenotype_genus, updated_phenotype_species)
 taxon_phenotypes %>%
   count(rank)
 taxon_phenotypes %>%
@@ -164,7 +238,6 @@ bind_rows(n_aerobic, n_gram) %>%
   labs(x = "Number of taxa", y = "", fill = "") +
   theme_bw() +
   theme(strip.background = element_blank())
-ggsave("phenotype_counts.png", width = 8, height = 4, dpi = 300)
 ```
 
 ```{r eval=FALSE}
@@ -177,7 +250,6 @@ taxon_phenotypes %>%
   labs(x = "Number of taxa annotated", y = "") +
   theme_bw() +
   theme(legend.position = "none")
-ggsave("taxon_counts.png", width = 4, height = 2, dpi = 300)
 ```
 
 
